@@ -1,2 +1,43 @@
-<ui-drawer></ui-drawer>
+<view class="page">
+  <view class="header">
+    <ui-drawer class="mine"></ui-drawer>
+    <view class="title">逸绽出行</view>
+    <image src="../../assets/icon/car.png" mode="widthFix" style="width:65px;margin-right: -20px;margin-top:31px"></image>
+  </view>
+  <view class="content">
+    <view class="card">
+      <view class="top">
+        <view class="left">
+          <image class="ava" mode="scaleToFill" src="../../assets/images/ava.png"></image>
+          <view class="user_name">点击登录</view>
+        </view>
+        <view class="right">立即认证</view>
+      </view>
+      <view class="bottom">
+        <view class="item">
+          <view class="title">订单数</view>
+          <view class="count">**</view>
+        </view>
+        <view class="line"></view>
+        <view class="item">
+          <view class="title">总收益</view>
+          <view class="count">**</view>
+        </view>
+        <view class="line"></view>
+        <view class="item">
+          <view class="title">里程数</view>
+          <view class="count">**</view>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y="true" style="height: calc(100vh - 309px);margin-top: 14px;">
+      <!-- 骨架屏 -->
+      <ui-skeleton wx:for="{{ 3 }}" wx:key="index"></ui-skeleton>
+    </scroll-view>
+    
+  </view>
+</view>
+
+
+
 

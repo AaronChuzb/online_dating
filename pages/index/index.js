@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showDrawer: false
+    showDrawer: false,
+    userInfoList: [
+      { title: "订单数", star: 0 },
+      { title: "总收益", star: 0 },
+      { title: "总里程", star: 0 },
+    ]
   },
   
   

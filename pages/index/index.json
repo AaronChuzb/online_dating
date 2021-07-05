@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "ui-drawer": "../../components/drawer/drawer"
+    "ui-drawer": "../../components/drawer/drawer",
+    "ui-skeleton": "../../components/skeleton/skeleton"
   },
-  "navigationStyle": "custom"
+  "navigationStyle": "custom",
+  "disableScroll": true
 }

@@ -1,0 +1,30 @@
+.content {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 0px 14px;
+  padding-bottom: 28px;
+}
+.content .item {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+}
+.content .button {
+  margin: 0 26px;
+  margin-top: 70px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 40px;
+  border: 1px solid #3983F6;
+  color: #3983F6;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 8px;
+}

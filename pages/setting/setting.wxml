@@ -1,0 +1,15 @@
+<view class="page">
+  <scroll-view scroll-y="true" style="height: 100vh">
+    <view class="content">
+      <view class="item">
+        <view>用户协议</view>
+        <mp-icon icon="arrow" color="#c6c6c6" size="{{ 8 }}"></mp-icon>
+      </view>
+      <view class="item">
+        <view>关于我们</view>
+        <mp-icon icon="arrow" color="#c6c6c6" size="{{ 8 }}"></mp-icon>
+      </view>
+      <view class="button" hover-class="button_hover">退出登录</view>
+    </view>
+  </scroll-view>
+</view>

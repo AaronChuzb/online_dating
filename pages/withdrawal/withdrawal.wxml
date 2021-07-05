@@ -1,0 +1,13 @@
+<view class="page">
+  <scroll-view scroll-y="true" style="height: 100vh">
+    <view class="content">
+      <view class="title">提现金额</view>
+      <view class="input_box">
+        <view class="input_title">￥</view>
+        <input type="number" placeholder="请输入提现金额" />
+      </view>
+      <view class="balance">可提现：¥1890.00</view>
+      <view class="button" hover-class="button_hover">确认提现</view>
+    </view>
+  </scroll-view>
+</view>

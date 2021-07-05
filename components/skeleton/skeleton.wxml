@@ -1,0 +1,8 @@
+<view class="skeleton">
+  <view class="left">
+    <view class="item" wx:for="{{ 4 }}" wx:key="index"></view>
+  </view>
+  <view class="right">
+    <view class="item" wx:for="{{ 3 }}" wx:key="index"></view>
+  </view>
+</view>

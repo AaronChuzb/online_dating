@@ -1,0 +1,11 @@
+.content {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 24px 15px;
+  text-indent: 2em;
+  font-size: 14px;
+  color: #333333;
+  line-height: 30px;
+}

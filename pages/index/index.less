@@ -1,0 +1,119 @@
+.page {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #6498f4;
+  display: flex;
+  justify-content: space-between;
+  height: 122px;
+  min-height: 122px;
+  //align-items: center;
+  border-radius: 0 0 24px 24px;
+
+  .mine {
+    margin-left: 24px;
+    margin-top: 48px;
+  }
+
+  .title {
+    margin-top: 51px;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.content {
+  margin-top: -30px;
+  padding: 0 10px;
+
+  .card {
+    background: #fff;
+    // min-height: 100px;
+    border-radius: 8px;
+    padding: 24px 14px;
+    padding-bottom: 18px;
+    height: 161px;
+    max-height: 161px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0 0 0 0.05);
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 1rem;
+
+      .left {
+        width: 70%;
+        display: flex;
+        align-items: center;
+
+        image {
+          width: 80px;
+          height: 80px;
+          background: rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.22);
+          border-radius: 50%;
+        }
+
+        .user_name {
+          line-height: 22px;
+          font-size: 22px;
+          font-weight: 400;
+          color: #222222;
+          margin-left: 18px;
+        }
+      }
+
+      .right {
+        margin-right: -17px;
+        font-size: 14px;
+        width: 75px;
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+        color: #3983F6;
+        background: #FFFFFF;
+        border: 1px solid #3983F6;
+        border-radius: 16px 0px 0px 16px;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 18px;
+
+      .item {
+        text-align: center;
+        font-size: 16px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        line-height: 27px;
+        color: #333333;
+
+        .count {
+          height: 18px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 31px;
+          color: #5898FB;
+        }
+      }
+
+      .line {
+        width: 1px;
+        height: 36px;
+        background: #F2F2F2;
+      }
+    }
+  }
+}

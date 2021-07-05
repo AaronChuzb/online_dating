@@ -1,4 +1,32 @@
-<view class='top_img'  bindtap="powerDrawer" data-status="open"></view>
-<view class='mask' bindtap="powerDrawer" data-status="close" wx:if="{{showDrawer}}"></view>
-<view class='Drawer' animation="{{animationData}}" wx:if="{{showDrawer}}"></view>
-
+<image src="../../assets/icon/mine.png" bindtap="drawer" data-status="{{ true }}" mode="widthFix" style="width: 18px">
+</image>
+<view class='mask' bindtap="drawer" data-status="{{ false }}" wx:if="{{show}}"></view>
+<view class="drawer {{show? 'show':''}}">
+  <!-- <image src="../../assets/images/back.png" mode="scaleToFill" class="back"></image> -->
+  <view class="header">
+    <image class="ava" mode="scaleToFill" src="../../assets/images/ava.png" />
+    <view class="right">
+    <!-- 第一行 -->
+      <view class="item">
+        <view class="name">李程新</view>
+        <view class="tag">已认证</view>
+      </view>
+      <!-- 第二行 -->
+      <view class="item phone">156*****088</view>
+      <!-- 第三行 -->
+      <view class="item">
+        <image src="../../assets/icon/star.png" mode="widthFix"></image>
+        <view class="text">评分：</view>
+        <view class="text">4.9</view>
+        <view class="text">分</view>
+      </view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="item" wx:for="{{ navList }}" wx:key="index" data-url="{{item.path}}" hover-class="button_hover" bindtap="nav">
+      <image src="{{ item.icon }}" mode="widthFix"></image>
+      <view class="title">{{ item.title }}</view>
+      <mp-icon icon="arrow" color="#c6c6c6" size="{{ 8 }}"></mp-icon>
+    </view>
+  </view>
+</view>

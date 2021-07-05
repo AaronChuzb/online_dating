@@ -1,23 +1,114 @@
-.mask{
-  position:fixed;
-  width:100%;
-  height:100vh;
-  background: #4c4c4c;
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 238px;
+  height: 100vh;
+}
+.header {
+  margin-top: 94px;
+  margin-left: 10px;
+  display: flex;
+}
+.header .ava {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.22);
+  border-radius: 50%;
+}
+.header .right {
+  margin-left: 12px;
+}
+.header .right .item {
+  display: flex;
+  align-items: center;
+}
+.header .right .item .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+.header .right .item .tag {
+  margin-left: 6px;
+  width: 51px;
+  height: 19px;
+  border: 1px solid #3983F6;
+  border-radius: 10px;
+  font-size: 11px;
+  color: #3983F6;
+  line-height: 19px;
+  text-align: center;
+}
+.header .right .item image {
+  clear: both;
+  width: 16px;
+  border-radius: 0;
+  background: none;
+  margin-right: 4px;
+}
+.header .right .item .text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #333333;
+}
+.header .right .phone {
+  height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 7px;
+  margin-bottom: 9px;
+}
+.list {
+  margin-top: 33px;
+}
+.list .item {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 54px;
+}
+.list .item image {
+  margin-right: 8px;
+  width: 18px;
+}
+.list .item .title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+}
+.list .item mp-icon {
+  margin-left: 130px;
+}
+.mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
   opacity: 0.5;
   z-index: 100;
-  top: 0
+  top: 0;
+  left: 0;
 }
-.Drawer{
-  position:fixed;
-  background:#fff;
-  width:220px;
-  height:100%;
-  left:-220px;
+.drawer {
+  position: fixed;
+  background: #fff;
+  width: 238px;
+  height: 100%;
+  left: -238px;
   z-index: 200;
   top: 0;
+  transition: all 0.2s;
+  will-change: transform;
 }
-.top_img{
-  width:60px;
-  height:60px;
-  background:#000000;
+.show {
+  left: 0;
+}
+.button_hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
 }
