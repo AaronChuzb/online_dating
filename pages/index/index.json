@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ui-drawer": "../../components/drawer/drawer"
+  },
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,4 @@
+<view class='top_img'  bindtap="powerDrawer" data-status="open"></view>
+<view class='mask' bindtap="powerDrawer" data-status="close" wx:if="{{showDrawer}}"></view>
+<view class='Drawer' animation="{{animationData}}" wx:if="{{showDrawer}}"></view>
+
