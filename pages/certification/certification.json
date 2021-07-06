@@ -3,5 +3,6 @@
   "backgroundTextStyle": "light",
   "navigationBarTitleText": "车主认证",
   "navigationBarBackgroundColor": "#F2F2F2",
-  "backgroundColor":"#F2F2F2"
+  "backgroundColor":"#F2F2F2",
+  "disableScroll": true
 }
