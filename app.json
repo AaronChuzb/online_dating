@@ -1,7 +1,9 @@
 {
   "pages":[
-    
     "pages/index/index",
+    "pages/certification/certification",
+    
+    "pages/wallet/wallet",
     "pages/withdrawal/withdrawal",
     "pages/setting/setting",
     "pages/about/about"
@@ -18,6 +20,10 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "mp-icon": "weui-miniprogram/icon/icon"
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-uploader": "weui-miniprogram/uploader/uploader",
+    "mp-form": "weui-miniprogram/form/form"
   }
 }

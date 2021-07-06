@@ -1,11 +1,11 @@
 // app.js
 // import api from './utils/api';
-// import login from './utils/login'
+import loginState from './utils/loginState'
 // import uploader from './utils/uploader'
 App({
   onLaunch() {
     // wx.$api = api
-    // wx.$login = login
+    wx.$login = loginState
     // wx.$uploader = uploader
     const token = wx.getStorageSync('token')
     if(token != ''){

@@ -16,9 +16,7 @@
       <!-- 第三行 -->
       <view class="item">
         <image src="../../assets/icon/star.png" mode="widthFix"></image>
-        <view class="text">评分：</view>
-        <view class="text">4.9</view>
-        <view class="text">分</view>
+        <view class="text">评分：<text>4.9</text>分</view>
       </view>
     </view>
   </view>

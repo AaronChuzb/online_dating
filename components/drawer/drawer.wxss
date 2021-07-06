@@ -48,10 +48,15 @@
   margin-right: 4px;
 }
 .header .right .item .text {
+  margin-top: 2px;
+  height: 12px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 12px;
   color: #333333;
+}
+.header .right .item .text text {
+  color: #3983F6;
 }
 .header .right .phone {
   height: 14px;

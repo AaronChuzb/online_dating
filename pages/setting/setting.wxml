@@ -5,10 +5,10 @@
         <view>用户协议</view>
         <mp-icon icon="arrow" color="#c6c6c6" size="{{ 8 }}"></mp-icon>
       </view>
-      <view class="item">
+      <navigator url="/pages/about/about" class="item">
         <view>关于我们</view>
         <mp-icon icon="arrow" color="#c6c6c6" size="{{ 8 }}"></mp-icon>
-      </view>
+      </navigator>
       <view class="button" hover-class="button_hover">退出登录</view>
     </view>
   </scroll-view>

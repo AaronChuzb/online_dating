@@ -7,26 +7,35 @@
   <view class="content">
     <view class="card">
       <view class="top">
-        <view class="left">
+        <view class="left" bindtap="login">
           <image class="ava" mode="scaleToFill" src="../../assets/images/ava.png"></image>
-          <view class="user_name">点击登录</view>
+          <!-- <view class="user_name">点击登录</view> -->
+          <!-- 认证后才出现的内容 -->
+          <view class="user_info">
+            <view class="name">李成新</view>
+            <view class="item">
+              <image class="star" src="../../assets/icon/star.png" mode="widthFix"></image>
+              <view class="text">评分：<text>4.9</text>分</view>
+            </view>
+          </view>
+          
         </view>
-        <view class="right">立即认证</view>
+        <view class="right" bindtap="certification">立即认证</view>
       </view>
       <view class="bottom">
         <view class="item">
           <view class="title">订单数</view>
-          <view class="count">**</view>
+          <view class="count">500</view>
         </view>
         <view class="line"></view>
         <view class="item">
           <view class="title">总收益</view>
-          <view class="count">**</view>
+          <view class="count">300000.00</view>
         </view>
         <view class="line"></view>
         <view class="item">
           <view class="title">里程数</view>
-          <view class="count">**</view>
+          <view class="count">10000KM</view>
         </view>
       </view>
     </view>

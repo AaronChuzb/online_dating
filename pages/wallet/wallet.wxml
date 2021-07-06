@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="header">
+    <view class="money"><text>¥</text>1890.00</view>
+    <view class="button" hover-class="button_hover" bindtap="gotoWithdrawal">马上提现</view>
+  </view>
+  <view class="button_bar">
+    <view class="item"><image class="car" src="../../assets/icon/car2.png" mode="widthFix" /></view>
+    <view class="item" hover-class="button_hover">
+      <image class="calendar" src="../../assets/icon/calendar.png" mode="widthFix" />
+      <view class="date">2021-05-12</view>
+    </view>
+    <view class="item">至</view>
+    <view class="item" hover-class="button_hover">
+      <image class="calendar" src="../../assets/icon/calendar.png" mode="widthFix" />
+      <view class="date">2021-05-12</view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" style="height: calc(100vh - 245px);margin-top:18px">
+    <ui-payment wx:for="{{ 3 }}" wx:key="index"></ui-payment>
+  </scroll-view>
+</view>

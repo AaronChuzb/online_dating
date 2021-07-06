@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ui-payment": "../../components/payment/payment"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "钱包",
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "backgroundColor":"#F2F2F2"
+}

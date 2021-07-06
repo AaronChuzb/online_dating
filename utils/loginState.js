@@ -8,7 +8,7 @@
  */
 
 
-const login = {
+const loginState = {
   /**
    * 
    * 
@@ -41,6 +41,7 @@ const login = {
                   //登录成功后执行回调函数
                   callBack()
                 }) */
+                callBack()
               } else {
                 wx.showToast({
                   title: '登录失败',
@@ -60,8 +61,8 @@ const login = {
   },
   /**
    * 
-   * @param {Function} callBack 回调函数，检测完状态如果未登录，调用登录后的回调函数
-   * @returns {Boolean} 未登录会弹出窗口提示用户登录，用户取消返回false，点击确定会进行登录流程，随后返回true，如果用户已登录直接返回true
+   * @param {Function} callBack 回调函数
+   * @returns {Boolean} 未登录会弹出窗口提示用户登录，用户取消什么都不做，点击确定会进行登录流程，随后调用回调函数，如果用户已登录直接调用回调函数
    */
   status(callBack){
     if(!wx.getStorageSync('token')){
@@ -72,13 +73,12 @@ const login = {
         success:function(res){
           if(res.confirm){
             that.getUserInfo(callBack)
-          } else {
-            return false
           }
         }
       })
+    } else {
+      callBack()
     }
-    return true
   },
 }
 

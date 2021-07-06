@@ -5,8 +5,8 @@ Component({
   data: {
     show: false,
     navList: [
-      { title: "认证", icon: "../../assets/icon/certification.png", path: "" },
-      { title: "钱包", icon: "../../assets/icon/wallet.png", path: "" },
+      { title: "认证", icon: "../../assets/icon/certification.png", path: "/pages/certification/certification" },
+      { title: "钱包", icon: "../../assets/icon/wallet.png", path: "/pages/wallet/wallet" },
       { title: "客服", icon: "../../assets/icon/service.png", path: "" },
       { title: "设置", icon: "../../assets/icon/setting.png", path: "/pages/setting/setting" },
     ]

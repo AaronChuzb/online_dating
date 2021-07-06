@@ -1,0 +1,57 @@
+<scroll-view class="page" style="height: 100vh" scroll-y="true">
+  <view class="title">个人信息</view>
+  <view class="form">
+    <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+      <mp-cells footer="">
+        <mp-cell prop="真实姓名" title="真实姓名" ext-class="">
+          <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入车牌号码" />
+        </mp-cell>
+        <mp-cell prop="身份证号码" title="身份证号码" ext-class="">
+          <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入身份证件号码" />
+        </mp-cell>
+        <mp-cell>
+          <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}"
+            upload="{{uplaodFile}}" files="{{files}}" max-count="2" title="上传身份证正反面" tips="">
+          </mp-uploader>
+        </mp-cell>
+        <mp-cell prop="人脸认证" link hover title="人脸认证" ext-class=""></mp-cell>
+        <mp-cell>
+          <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}"
+            upload="{{uplaodFile}}" files="{{files}}" max-count="1" title="资格证照片" tips="">
+          </mp-uploader>
+        </mp-cell>
+        <mp-cell prop="目前在职单位" title="目前在职单位" ext-class="">
+          <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入目前在职单位" />
+        </mp-cell>
+        <mp-cell link prop="驾照种类" title="驾照种类" ext-class="">
+          <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+            <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+          </picker>
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+  </view>
+  <view class="title car">车辆信息</view>
+  <view class="form">
+    <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+      <mp-cells footer="">
+        <mp-cell prop="车牌号码" title="车牌号码" ext-class="">
+          <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入车牌号码" />
+        </mp-cell>
+        <mp-cell prop="车辆型号" title="车辆型号" ext-class="">
+          <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入车辆型号" />
+        </mp-cell>
+        <mp-cell prop="车辆所属公司" title="车辆所属公司" ext-class="">
+          <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="请输入车辆所属公司" />
+        </mp-cell>
+        <mp-cell>
+          <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}"
+            upload="{{uplaodFile}}" files="{{files}}" max-count="1" title="道路运输证" tips="">
+          </mp-uploader>
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+  </view>
+  <view class="button" hover-class="button_hover">提交认证</view>
+  <view style="height:57px"></view>
+</scroll-view>

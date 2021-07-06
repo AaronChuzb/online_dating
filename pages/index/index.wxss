@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
 }
-.content .card .top .left image {
+.content .card .top .left .ava {
   width: 80px;
   height: 80px;
   background: rgba(0, 0, 0, 0);
@@ -62,6 +62,34 @@
   font-weight: 400;
   color: #222222;
   margin-left: 18px;
+}
+.content .card .top .left .user_info {
+  margin-left: 9px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+}
+.content .card .top .left .user_info .name {
+  font-size: 22px;
+  line-height: 22px;
+  height: 22px;
+  font-weight: 400;
+  color: #222222;
+}
+.content .card .top .left .user_info .item {
+  margin-top: 21px;
+  display: flex;
+}
+.content .card .top .left .user_info .item .star {
+  width: 16px;
+  margin-right: 4px;
+}
+.content .card .top .left .user_info .item .text {
+  line-height: 19px;
+  height: 19px;
+}
+.content .card .top .left .user_info .item .text text {
+  color: #3983F6;
 }
 .content .card .top .right {
   margin-right: -17px;
@@ -91,7 +119,7 @@
 }
 .content .card .bottom .item .count {
   height: 18px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 31px;
   color: #5898FB;
