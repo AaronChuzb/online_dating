@@ -40,8 +40,9 @@
       </view>
     </view>
     <scroll-view scroll-y="true" style="height: calc(100vh - 309px);margin-top: 14px;">
-      <!-- 骨架屏 -->
-      <ui-skeleton wx:for="{{ 3 }}" wx:key="index"></ui-skeleton>
+      <!-- 骨架屏，获取数据前展示， -->
+      <ui-skeleton wx:for="{{ 0 }}" wx:key="index"></ui-skeleton>
+      <ui-order wx:for="{{ 4 }}" wx:key="index"></ui-order>
     </scroll-view>
     
   </view>

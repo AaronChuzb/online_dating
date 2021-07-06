@@ -1,0 +1,68 @@
+.card {
+  margin: 0 10px;
+  height: 144px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card .left {
+  margin-left: 14px;
+  margin-top: 8px;
+}
+.card .left .item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.card .left .item .dot {
+  border-radius: 50%;
+  border: 2px solid #FFBA19;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+}
+.card .left .item .dot1 {
+  border: 2px solid #3983F6;
+}
+.card .left .item .dot2 {
+  border: 2px solid #F14942;
+}
+.card .left .money {
+  font-size: 28px;
+  line-height: 28px;
+  margin-top: 8px;
+  font-weight: 500;
+  color: #333333;
+}
+.card .left .money text {
+  font-size: 14px;
+  margin-right: 3px;
+}
+.card .right {
+  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card .right .status {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5898FB;
+}
+.card .right .ava {
+  width: 36px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  margin-top: 28px;
+}
+.card .right .user_name {
+  margin: 7px 0;
+  font-size: 14px;
+}
