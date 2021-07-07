@@ -1,4 +1,4 @@
-<view class="card" >
+<view class="card" bindtap="checkDetail">
   <view class="left">
     <view class="item"><view class="dot"></view> 2021年3月22日 14：07</view>
     <view class="item"><view class="dot dot1"></view>金运路东北侧</view>
@@ -6,11 +6,9 @@
     <view class="money"><text>¥</text>68.00</view>
   </view>
   <view class="right">
+  <!-- TODO: 三种状态需要判断 -->
+    <view class="status" style="{{ state != 1?'color: #CCCCCC;':'' }}">{{ state == 1?'进行中':state == 2?'已完成':state == 3?'已取消':'' }}</view>
     <image class="ava" src="../../assets/images/custom.png" mode="widthFix"  />
     <view class="user_name">大娱乐家</view>
   </view>
-  <view class="get" hover-class="button_hover" bindtap="dialogShow"><text>接</text><text>单</text></view>
 </view>
-<mp-dialog show="{{showDialog}}" bindbuttontap="onClose" buttons="{{button}}">
-  <view class="dialog_content" style="{{index != 0?'color: #999999;':''}}">{{index != 0?'接单失败，请重新接单！':'已成功接单！'}}</view>
-</mp-dialog>

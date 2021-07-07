@@ -47,12 +47,9 @@
       "beforeColon": false,
       "afterColon": true
     }],
-    "lines-around-comment": [2, {
-      "beforeBlockComment": true
-    }],
     "no-multiple-empty-lines": [2, {
       "max": 2
     }],
-    "computed-property-spacing": [2, "always"],
+    "computed-property-spacing": [2, "always"]
   }
 }

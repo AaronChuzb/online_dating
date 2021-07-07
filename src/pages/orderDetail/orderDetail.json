@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ui-rate": "../../components/rate/rate"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "行程详细",
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "backgroundColor":"#F2F2F2",
+  "disableScroll": true
+}

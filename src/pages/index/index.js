@@ -1,3 +1,11 @@
+/*
+ * @Author: AaronChu
+ * @Date: 2021-07-05 16:08:10
+ * @LastEditTime: 2021-07-07 17:09:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \online_dating\src\pages\index\index.js
+ */
 // pages/index/index.js
 const app = getApp()
 Page({
@@ -26,6 +34,12 @@ Page({
       wx.navigateTo({
         url: '/pages/certification/certification'
       })
+    })
+  },
+  // 去抢单页面
+  toTakeOrder(){
+    wx.navigateTo({
+      url: '/pages/orderTaking/orderTaking'
     })
   },
 

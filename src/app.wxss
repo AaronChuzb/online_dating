@@ -5,6 +5,7 @@
 .page{
   background: #f2f2f2;
   font-size: 28rpx;
+  color: #333333;
 }
 .button{
   height: 80rpx;

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ui-order": "../../components/order/order"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "接单",
+  "navigationBarBackgroundColor": "#F2F2F2",
+  "backgroundColor":"#F2F2F2",
+  "disableScroll": true
+}

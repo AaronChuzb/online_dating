@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="header">
+    <view class="item">
+      <view class="title">在线时长</view>
+      <view class="count">10小时</view>
+    </view>
+    <view class="line"></view>
+    <view class="item">
+      <view class="title">接单数</view>
+      <view class="count">5单</view>
+    </view>
+    <view class="line"></view>
+    <view class="item">
+      <view class="title">收益</view>
+      <view class="count">288.00元</view>
+    </view>
+  </view>
+  <view class="address">
+    <image class="icon" src="../../assets/icon/address.png" mode="heightFix" />
+    <view>{{ address }}</view>
+  </view>
+  <scroll-view scroll-y="true" style="height: calc(100vh - 288rpx)">
+    <ui-order wx:for="{{ 6 }}" wx:key="index"></ui-order>
+    <view class="refresh" catchtouchmove="buttonMove" catchtouchstart="buttonStart" catchtouchend="buttonEnd" style="top:{{buttonTop}}px;left:{{buttonLeft}}px;">
+      <image class="icon" src="../../assets/icon/refresh.png" mode="widthFix" />
+    </view>
+    <view style="height: 100rpx"></view> 
+  </scroll-view>
+</view>
+  

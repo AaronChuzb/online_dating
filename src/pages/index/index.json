@@ -2,7 +2,7 @@
   "usingComponents": {
     "ui-drawer": "../../components/drawer/drawer",
     "ui-skeleton": "../../components/skeleton/skeleton",
-    "ui-order": "../../components/order/order"
+    "ui-history": "../../components/history/history"
   },
   "navigationStyle": "custom",
   "disableScroll": true

@@ -1,0 +1,38 @@
+<view class="page">
+  <view class="card">
+    <view class="left">
+      <view class="item"><view class="dot"></view> 2021年3月22日 14：07</view>
+      <view class="item"><view class="dot dot1"></view>金运路东北侧</view>
+      <view class="item"><view class="dot dot2"></view>西关富邦大厦（中山七路）</view>
+    </view>
+    <view class="right">
+      <image class="ava" src="../../assets/images/custom.png" mode="widthFix"  />
+      <view class="user_name">大娱乐家</view>
+    </view>
+  </view>
+  <view class="status">
+    <view class="title">
+      <view class="line"></view>
+      <view class="text">订单已支付</view>
+      <view class="line"></view> 
+    </view>
+    <view class="content">乘客已支付订单</view>
+  </view>
+  <view class="status">
+    <view class="title">
+      <view class="line"></view>
+      <view class="text">获得收益</view>
+      <view class="line"></view> 
+    </view>
+    <view class="content money">68.00 <text>元</text></view>
+  </view>
+  <view class="status evaluation">
+    <view class="title">
+      <view class="line"></view>
+      <view class="text">他对我的评价</view>
+      <view class="line"></view> 
+    </view>
+    <ui-rate value="{{ 4 }}"></ui-rate>
+  </view>
+</view>
+  
