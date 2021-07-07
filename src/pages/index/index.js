@@ -37,7 +37,7 @@ Page({
     })
   },
   // 去抢单页面
-  toTakeOrder(){
+  toTakeOrder () {
     wx.navigateTo({
       url: '/pages/orderTaking/orderTaking'
     })

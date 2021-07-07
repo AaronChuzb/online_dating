@@ -1,7 +1,7 @@
 /*
  * @Author: AaronChu
  * @Date: 2021-07-07 09:26:52
- * @LastEditTime: 2021-07-07 12:00:26
+ * @LastEditTime: 2021-07-07 18:26:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \online_dating\pages\wallet\wallet.js
@@ -45,11 +45,11 @@ Page({
   getData (type, page) {
     // TODO: api对接
     // 刷新
-    if (type === 'refresh') {
+    /* if (type === 'refresh') {
 
     } else if (type === 'more') {
-      
-    }
+
+    } */
   },
 
   onLoad (options) {

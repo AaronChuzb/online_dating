@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2021-07-05 16:14:27
- * @LastEditTime: 2021-07-07 11:53:28
- * @LastEditors: your name
+ * @LastEditTime: 2021-07-07 18:25:30
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \online_dating\src\http\request.js
  */
@@ -67,6 +67,7 @@ function request (url, data, method) {
             })
           }
         } else if (statusCode === 401) {
+          catchError('错误401')
         } else {
           catchError('服务器异常，请稍后再试！')
         }

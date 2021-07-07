@@ -13,20 +13,20 @@ Component({
   },
   data: {
     showDialog: false,
-    button: [{text: '确定'}],
+    button: [{ text: '确定' }],
     index: 0
   },
   methods: {
-    dialogShow(e) {
+    dialogShow (e) {
       this.setData({
         showDialog: true,
         index: Math.round(Math.random())
       })
     },
-    onClose(e) {
+    onClose (e) {
       this.setData({
-        showDialog: false,
+        showDialog: false
       })
-    },
+    }
   }
 })

@@ -12,17 +12,17 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    value:{
+    value: {
       type: Number,
       default: 3
     }
   },
   data: {
     rate: 3,
-    noneRate: 2,
+    noneRate: 2
   },
   observers: {
-    'value': function (value){
+    value: function (value) {
       this.setData({
         rate: value,
         noneRate: 5 - value
