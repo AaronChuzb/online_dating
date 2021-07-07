@@ -1,0 +1,30 @@
+{
+  "name": "online_dating",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix src/app.js src/components src/pages src/utils src/http"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronChuzb/online_dating.git"
+  },
+  "author": "AaronChu",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/AaronChuzb/online_dating/issues"
+  },
+  "homepage": "https://github.com/AaronChuzb/online_dating#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}
