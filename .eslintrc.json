@@ -30,6 +30,29 @@
     "quotes": [
       "error",
       "single" // backtick、double、single
-    ]
+    ],
+    "no-mixed-spaces-and-tabs": [
+      "error", "smart-tabs"
+    ],
+    "no-dupe-args": 2,
+    "no-dupe-keys": 2,
+    "no-extra-parens": 0,
+    "curly": [2, "all"],
+    "no-use-before-define": 0,
+    "comma-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
+    "key-spacing": [2, {
+      "beforeColon": false,
+      "afterColon": true
+    }],
+    "lines-around-comment": [2, {
+      "beforeBlockComment": true
+    }],
+    "no-multiple-empty-lines": [2, {
+      "max": 2
+    }],
+    "computed-property-spacing": [2, "always"],
   }
 }
