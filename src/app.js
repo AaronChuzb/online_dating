@@ -8,7 +8,7 @@ App({
     wx.$login = loginState
     // wx.$uploader = uploader
     const token = wx.getStorageSync('token')
-    if (token != '') {
+    if (token !== '') {
       console.log('[app.js: onLaunch()]:已登录')
       this.globalData.isLogin = true
     } else {

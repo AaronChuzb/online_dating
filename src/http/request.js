@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-07-05 16:14:27
+ * @LastEditTime: 2021-07-07 11:53:28
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \online_dating\src\http\request.js
+ */
 const https = '' // 请求地址
 
 // request封装
@@ -34,9 +42,9 @@ function request (url, data, method) {
         wx.hideLoading()
         const statusCode = res.statusCode
         if (statusCode >= 200 && statusCode < 400) {
-          if (res.data.code == 1) {
+          if (res.data.code === 1) {
             resolve(res.data)
-          } else if (res.data.code == 10) {
+          } else if (res.data.code === 10) {
             wx.showModal({
               title: '',
               content: '您的登录已过期，请重新登录。',
@@ -50,7 +58,7 @@ function request (url, data, method) {
               }
             })
           } else {
-            if (res.data.code == 0) {
+            if (res.data.code === 0) {
               reject(res.data)
             }
             wx.showToast({
@@ -58,7 +66,7 @@ function request (url, data, method) {
               icon: 'none'
             })
           }
-        } else if (statusCode == 401) {
+        } else if (statusCode === 401) {
         } else {
           catchError('服务器异常，请稍后再试！')
         }

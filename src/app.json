@@ -1,10 +1,9 @@
 {
   "pages":[
-    "pages/wallet/wallet",
     "pages/index/index",
+    "pages/wallet/wallet",
+    
     "pages/certification/certification",
-    
-    
     "pages/withdrawal/withdrawal",
     "pages/setting/setting",
     "pages/about/about"

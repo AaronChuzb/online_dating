@@ -8,40 +8,39 @@
   background-color: #6498f4;
   display: flex;
   justify-content: space-between;
-  height: 122px;
-  min-height: 122px;
-  border-radius: 0 0 24px 24px;
+  height: 244rpx;
+  border-radius: 0 0 48rpx 48rpx;
 }
 .header .mine {
-  margin-left: 24px;
-  margin-top: 48px;
+  margin-left: 48rpx;
+  margin-top: 96rpx;
 }
 .header .title {
-  margin-top: 51px;
+  margin-top: 102rpx;
   font-weight: 500;
   color: #ffffff;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 40rpx;
+  line-height: 40rpx;
 }
 .content {
-  margin-top: -30px;
-  padding: 0 10px;
+  margin-top: -60rpx;
+  padding: 0 20rpx;
 }
 .content .card {
   background: #fff;
-  border-radius: 8px;
-  padding: 24px 14px;
-  padding-bottom: 18px;
-  height: 161px;
-  max-height: 161px;
+  border-radius: 16rpx;
+  padding: 48rpx 28rpx;
+  padding-bottom: 36rpx;
+  height: 322rpx;
+  max-height: 322rpx;
   overflow: hidden;
-  box-shadow: 0 2px 4px 0 rgba(0 0 0 0.05);
+  box-shadow: 0 4rpx 8rpx 0 rgba(0 0 0 0.05);
 }
 .content .card .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 2rpx solid #f2f2f2;
   padding-bottom: 1rem;
 }
 .content .card .top .left {
@@ -50,82 +49,82 @@
   align-items: center;
 }
 .content .card .top .left .ava {
-  width: 80px;
-  height: 80px;
+  width: 160rpx;
+  height: 160rpx;
   background: rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 0px 12rpx rgba(0, 0, 0, 0.22);
   border-radius: 50%;
 }
 .content .card .top .left .user_name {
-  line-height: 22px;
-  font-size: 22px;
+  line-height: 44rpx;
+  font-size: 44rpx;
   font-weight: 400;
   color: #222222;
-  margin-left: 18px;
+  margin-left: 36rpx;
 }
 .content .card .top .left .user_info {
-  margin-left: 9px;
-  font-size: 12px;
+  margin-left: 18rpx;
+  font-size: 24rpx;
   font-weight: 400;
   color: #333333;
 }
 .content .card .top .left .user_info .name {
-  font-size: 22px;
-  line-height: 22px;
-  height: 22px;
+  font-size: 44rpx;
+  line-height: 44rpx;
+  height: 44rpx;
   font-weight: 400;
   color: #222222;
 }
 .content .card .top .left .user_info .item {
-  margin-top: 21px;
+  margin-top: 22rpx;
   display: flex;
 }
 .content .card .top .left .user_info .item .star {
-  width: 16px;
-  margin-right: 4px;
+  width: 32rpx;
+  margin-right: 8rpx;
 }
 .content .card .top .left .user_info .item .text {
-  line-height: 19px;
-  height: 19px;
+  line-height: 38rpx;
+  height: 38rpx;
 }
 .content .card .top .left .user_info .item .text text {
   color: #3983F6;
 }
 .content .card .top .right {
-  margin-right: -17px;
-  font-size: 14px;
-  width: 75px;
-  height: 27px;
-  line-height: 27px;
+  margin-right: -34rpx;
+  font-size: 28rpx;
+  width: 150rpx;
+  height: 54rpx;
+  line-height: 54rpx;
   text-align: center;
   color: #3983F6;
   background: #FFFFFF;
-  border: 1px solid #3983F6;
-  border-radius: 16px 0px 0px 16px;
+  border: 2rpx solid #3983F6;
+  border-radius: 32rpx 0rpx 0rpx 32rpx;
 }
 .content .card .bottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 18px;
+  padding-top: 36rpx;
 }
 .content .card .bottom .item {
   text-align: center;
-  font-size: 16px;
+  font-size: 32rpx;
   font-family: Source Han Sans CN;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 54rpx;
   color: #333333;
 }
 .content .card .bottom .item .count {
-  height: 18px;
-  font-size: 16px;
+  height: 36rpx;
+  font-size: 32rpx;
   font-weight: 400;
-  line-height: 31px;
+  line-height: 62rpx;
   color: #5898FB;
 }
 .content .card .bottom .line {
-  width: 1px;
-  height: 36px;
+  width: 2rpx;
+  height: 72rpx;
   background: #F2F2F2;
 }

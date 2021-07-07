@@ -1,13 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-07-05 16:36:35
- * @LastEditTime: 2021-07-05 16:53:53
- * @LastEditors: your name
+ * @LastEditTime: 2021-07-07 11:56:22
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \online_dating\utils\loginState.js
  */
 
 const loginState = {
+
   /**
    *
    *
@@ -26,8 +27,8 @@ const loginState = {
             data: res.userInfo.avatarUrl,
             key: 'avatarUrl'
           })
-          const name = res.userInfo.nickName
-          const ava = res.userInfo.avatarUrl
+          // const name = res.userInfo.nickName
+          // const ava = res.userInfo.avatarUrl
           wx.login({
             success (res) {
               if (res.code) {
@@ -58,6 +59,7 @@ const loginState = {
       }
     })
   },
+
   /**
    *
    * @param {Function} callBack 回调函数

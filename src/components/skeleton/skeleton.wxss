@@ -1,43 +1,43 @@
 .skeleton {
-  margin-bottom: 14px;
-  height: 144px;
+  margin-bottom: 28rpx;
+  height: 288rpx;
   background: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 16rpx;
   display: flex;
   justify-content: space-between;
 }
 .skeleton .left {
-  margin-left: 14px;
+  margin-left: 28rpx;
 }
 .skeleton .left .item {
-  margin-top: 9px;
-  width: 155px;
-  height: 20px;
+  margin-top: 18rpx;
+  width: 310rpx;
+  height: 40rpx;
   opacity: 1;
-  border-radius: 11px;
+  border-radius: 22rpx;
 }
 .skeleton .left :first-child {
-  margin-top: 17px;
+  margin-top: 34rpx;
 }
 .skeleton .left :last-child {
-  width: 82px;
+  width: 164rpx;
 }
 .skeleton .right .item {
-  margin-top: 17px;
-  margin-right: 16px;
-  width: 68px;
-  height: 20px;
-  border-radius: 11px;
+  margin-top: 34rpx;
+  margin-right: 32rpx;
+  width: 136rpx;
+  height: 40rpx;
+  border-radius: 22rpx;
 }
 .skeleton .right :nth-child(2) {
-  width: 54px;
-  height: 54px;
-  margin-top: 12px;
-  margin-left: 7px;
+  width: 108rpx;
+  height: 108rpx;
+  margin-top: 24rpx;
+  margin-left: 14rpx;
   border-radius: 50%;
 }
 .skeleton .right :nth-child(3) {
-  margin-top: 8px;
+  margin-top: 16rpx;
 }
 .item {
   background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);

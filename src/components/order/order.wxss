@@ -1,68 +1,67 @@
 .card {
-  margin: 0 10px;
-  height: 144px;
+  margin: 0 20rpx;
+  height: 288rpx;
   background: #FFFFFF;
-  border-radius: 8px;
-  margin-bottom: 14px;
+  border-radius: 16rpx;
+  margin-bottom: 28rpx;
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
   font-weight: 400;
 }
 .card .left {
-  margin-left: 14px;
-  margin-top: 8px;
+  margin-left: 28rpx;
+  margin-top: 16rpx;
 }
 .card .left .item {
-  height: 30px;
+  height: 60rpx;
   display: flex;
   align-items: center;
 }
 .card .left .item .dot {
   border-radius: 50%;
-  border: 2px solid #FFBA19;
-  width: 4px;
-  height: 4px;
-  margin-right: 10px;
+  border: 4rpx solid #FFBA19;
+  width: 8rpx;
+  height: 8rpx;
+  margin-right: 20rpx;
 }
 .card .left .item .dot1 {
-  border: 2px solid #3983F6;
+  border: 4rpx solid #3983F6;
 }
 .card .left .item .dot2 {
-  border: 2px solid #F14942;
+  border: 4rpx solid #F14942;
 }
 .card .left .money {
-  font-size: 28px;
-  line-height: 28px;
-  margin-top: 8px;
+  font-size: 56rpx;
+  line-height: 56rpx;
+  margin-top: 16rpx;
   font-weight: 500;
   color: #333333;
 }
 .card .left .money text {
-  font-size: 14px;
-  margin-right: 3px;
+  font-size: 28rpx;
+  margin-right: 6rpx;
 }
 .card .right {
-  margin-right: 14px;
+  margin-right: 28rpx;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 .card .right .status {
-  margin-top: 16px;
-  font-size: 16px;
+  margin-top: 32rpx;
+  font-size: 32rpx;
   font-weight: 400;
   color: #5898FB;
 }
 .card .right .ava {
-  width: 36px;
-  height: 36px;
+  width: 72rpx;
+  height: 72rpx;
   background: #FFFFFF;
-  border: 1px solid #707070;
+  border: 2rpx solid #707070;
   border-radius: 50%;
-  margin-top: 28px;
+  margin-top: 56rpx;
 }
 .card .right .user_name {
-  margin: 7px 0;
-  font-size: 14px;
+  margin: 14rpx 0;
+  font-size: 28rpx;
 }

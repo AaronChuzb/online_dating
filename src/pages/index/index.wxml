@@ -2,7 +2,7 @@
   <view class="header">
     <ui-drawer class="mine"></ui-drawer>
     <view class="title">逸绽出行</view>
-    <image src="../../assets/icon/car.png" mode="widthFix" style="width:65px;margin-right: -20px;margin-top:31px"></image>
+    <image src="../../assets/icon/car.png" mode="widthFix" style="width:65px;margin-right: -40rpx;margin-top:31px"></image>
   </view>
   <view class="content">
     <view class="card">
@@ -39,7 +39,7 @@
         </view>
       </view>
     </view>
-    <scroll-view scroll-y="true" style="height: calc(100vh - 309px);margin-top: 14px;">
+    <scroll-view scroll-y="true" style="height: calc(100vh - 309px);margin-top: 28rpx;">
       <!-- 骨架屏，获取数据前展示， -->
       <ui-skeleton wx:for="{{ 4 }}" wx:key="index"></ui-skeleton>
       <ui-order wx:for="{{ 4 }}" wx:key="index"></ui-order>

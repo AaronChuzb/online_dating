@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-07-05 17:46:47
+ * @LastEditTime: 2021-07-07 11:52:08
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \online_dating\src\components\drawer\drawer.js
+ */
 Component({
   properties: {
 
@@ -21,7 +29,7 @@ Component({
     },
     nav (e) {
       const url = e.currentTarget.dataset.url
-      wx, wx.navigateTo({
+      wx.navigateTo({
         url: url
       })
     }

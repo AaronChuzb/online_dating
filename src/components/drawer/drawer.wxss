@@ -2,92 +2,92 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 238px;
+  width: 476rpx;
   height: 100vh;
 }
 .header {
-  margin-top: 94px;
-  margin-left: 10px;
+  margin-top: 188rpx;
+  margin-left: 20rpx;
   display: flex;
 }
 .header .ava {
-  width: 80px;
-  height: 80px;
+  width: 160rpx;
+  height: 160rpx;
   background: rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.22);
+  box-shadow: 0rpx 0rpx 12rpx rgba(0, 0, 0, 0.22);
   border-radius: 50%;
 }
 .header .right {
-  margin-left: 12px;
+  margin-left: 24rpx;
 }
 .header .right .item {
   display: flex;
   align-items: center;
 }
 .header .right .item .name {
-  font-size: 18px;
+  font-size: 36rpx;
   font-weight: 500;
   color: #333333;
 }
 .header .right .item .tag {
-  margin-left: 6px;
-  width: 51px;
-  height: 19px;
-  border: 1px solid #3983F6;
-  border-radius: 10px;
-  font-size: 11px;
+  margin-left: 12rpx;
+  width: 102rpx;
+  height: 38rpx;
+  border: 2rpx solid #3983F6;
+  border-radius: 20rpx;
+  font-size: 22rpx;
   color: #3983F6;
-  line-height: 19px;
+  line-height: 38rpx;
   text-align: center;
 }
 .header .right .item image {
   clear: both;
-  width: 16px;
+  width: 32rpx;
   border-radius: 0;
   background: none;
-  margin-right: 4px;
+  margin-right: 8rpx;
 }
 .header .right .item .text {
-  margin-top: 2px;
-  height: 12px;
-  font-size: 12px;
+  margin-top: 4rpx;
+  height: 24rpx;
+  font-size: 24rpx;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 24rpx;
   color: #333333;
 }
 .header .right .item .text text {
   color: #3983F6;
 }
 .header .right .phone {
-  height: 14px;
-  font-size: 14px;
+  height: 28rpx;
+  font-size: 28rpx;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 48rpx;
   color: #333333;
-  margin-top: 7px;
-  margin-bottom: 9px;
+  margin-top: 14rpx;
+  margin-bottom: 18rpx;
 }
 .list {
-  margin-top: 33px;
+  margin-top: 66rpx;
 }
 .list .item {
-  padding-left: 20px;
+  padding-left: 40rpx;
   display: flex;
   align-items: center;
-  height: 54px;
+  height: 108rpx;
 }
 .list .item image {
-  margin-right: 8px;
-  width: 18px;
+  margin-right: 16rpx;
+  width: 36rpx;
 }
 .list .item .title {
-  font-size: 15px;
+  font-size: 30rpx;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 52rpx;
   color: #333333;
 }
 .list .item mp-icon {
-  margin-left: 130px;
+  margin-left: 260rpx;
 }
 .mask {
   position: absolute;
@@ -102,9 +102,9 @@
 .drawer {
   position: fixed;
   background: #fff;
-  width: 238px;
+  width: 476rpx;
   height: 100%;
-  left: -238px;
+  left: -476rpx;
   z-index: 200;
   top: 0;
   transition: all 0.2s;
