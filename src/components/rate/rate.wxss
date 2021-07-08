@@ -1,13 +1,8 @@
 .rate {
-  display: grid;
-  grid-template-columns: repeat(5, 64rpx);
-  gap: 20rpx;
-  width: 400rpx;
+  display: flex;
   margin: 0 auto;
-  height: 64rpx;
   align-items: center;
   justify-content: center;
-  padding-top: 48rpx;
 }
 .star {
   width: 64rpx;

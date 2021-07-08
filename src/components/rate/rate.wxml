@@ -1,5 +1,5 @@
 <view class="rate">
-  <image class="star" src="../../assets/icon/star.png" mode="widthFix" wx:for="{{ rate }}" wx:key="index" />
-  <image class="star" src="../../assets/icon/nonestar.png" mode="widthFix" wx:for="{{ noneRate }}" wx:key="index" /> 
+  <image class="star" style="{{'width:' + width + 'rpx;margin-right:'+ gaps + 'rpx'}}" src="../../assets/icon/star.png" mode="widthFix" wx:for="{{ rate }}" wx:key="index" />
+  <image class="star" style="{{'width:' + width + 'rpx;margin-right:'+ gaps + 'rpx'}}" src="../../assets/icon/nonestar.png" mode="widthFix" wx:for="{{ noneRate }}" wx:key="index" /> 
 </view>
   

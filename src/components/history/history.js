@@ -1,7 +1,7 @@
 /*
  * @Author: AaronChu
  * @Date: 2021-07-07 18:04:31
- * @LastEditTime: 2021-07-07 18:24:13
+ * @LastEditTime: 2021-07-08 10:51:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \online_dating\src\components\history\history.js
@@ -26,9 +26,9 @@ Component({
   },
   methods: {
     checkDetail () {
-      if (this.data.state === 2) {
+      if (this.data.state === 2 || this.data.state === 3) {
         wx.navigateTo({
-          url: '/pages/orderDetail/orderDetail'
+          url: `/pages/orderDetail/orderDetail?status=${this.data.state}`
         })
       }
     }

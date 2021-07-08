@@ -9,8 +9,7 @@
     <image class="ava" src="../../assets/images/custom.png" mode="widthFix"  />
     <view class="user_name">大娱乐家</view>
     <view class="star">
-      <image src="../../assets/icon/star.png" mode="widthFix" />
-      <view>他的评分：<text>4</text>分</view>
+      <ui-rate value="{{ 4 }}" size="{{ 32 }}" gap="{{ 8 }}"></ui-rate>
     </view>
   </view>
 </view>

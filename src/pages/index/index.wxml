@@ -1,6 +1,6 @@
 <view class="page">
   <view class="header">
-    <ui-drawer class="mine"></ui-drawer>
+    <ui-drawer rate="{{ 4 }}" class="mine"></ui-drawer>
     <view class="title">逸绽出行</view>
     <image src="../../assets/icon/car.png" mode="widthFix" style="width:65px;margin-right: -40rpx;margin-top:31px"></image>
   </view>
@@ -14,8 +14,9 @@
           <view class="user_info">
             <view class="name">李成新</view>
             <view class="item">
-              <image class="star" src="../../assets/icon/star.png" mode="widthFix"></image>
-              <view class="text">评分：<text>4.9</text>分</view>
+              <!-- <image class="star" src="../../assets/icon/star.png" mode="widthFix" wx:for="{{ 3 }}" wx:key="index"></image>
+              <image class="star" src="../../assets/icon/nonestar.png" mode="widthFix" wx:for="{{ 2 }}" wx:key="index"></image> -->
+              <ui-rate value="{{ 4 }}" size="{{ 32 }}" gap="{{ 8 }}"></ui-rate>
             </view>
           </view>
           
@@ -39,7 +40,7 @@
         </view>
       </view>
     </view>
-    <scroll-view scroll-y="true" style="height: calc(100vh - 309px);margin-top: 28rpx;">
+    <scroll-view scroll-y="true" style="height: calc(100vh - 618rpx);margin-top: 28rpx;">
       <!-- 骨架屏，获取数据前展示， -->
       <!-- <ui-skeleton wx:for="{{ 4 }}" wx:key="index"></ui-skeleton> -->
       <ui-history wx:for="{{ 3 }}" wx:key="index" status="{{ index + 1 }}"></ui-history>

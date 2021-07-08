@@ -1,14 +1,17 @@
 /*
  * @Author: your name
  * @Date: 2021-07-05 17:46:47
- * @LastEditTime: 2021-07-07 11:52:08
- * @LastEditors: your name
+ * @LastEditTime: 2021-07-08 10:42:19
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \online_dating\src\components\drawer\drawer.js
  */
 Component({
   properties: {
-
+    rate: {
+      type: Number,
+      default: 3
+    }
   },
   data: {
     show: false,
@@ -17,7 +20,17 @@ Component({
       { title: '钱包', icon: '../../assets/icon/wallet.png', path: '/pages/wallet/wallet' },
       { title: '客服', icon: '../../assets/icon/service.png', path: '' },
       { title: '设置', icon: '../../assets/icon/setting.png', path: '/pages/setting/setting' }
-    ]
+    ],
+    star: 3,
+    nonestar: 2,
+  },
+  observers: {
+    rate: function (rate) {
+      this.setData({
+        star: rate,
+        nonestar: 5 - rate
+      })
+    }
   },
 
   methods: {

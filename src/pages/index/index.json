@@ -2,7 +2,8 @@
   "usingComponents": {
     "ui-drawer": "../../components/drawer/drawer",
     "ui-skeleton": "../../components/skeleton/skeleton",
-    "ui-history": "../../components/history/history"
+    "ui-history": "../../components/history/history",
+    "ui-rate": "../../components/rate/rate"
   },
   "navigationStyle": "custom",
   "disableScroll": true
