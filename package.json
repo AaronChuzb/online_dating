@@ -1,7 +1,7 @@
 {
   "name": "online_dating",
   "version": "1.0.0",
-  "description": "",
+  "description": "微信小程序打车项目",
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/AaronChuzb/online_dating.git"
   },
   "author": "AaronChu",
-  "license": "GPL-3.0-or-later",
+  "license": "MPL2.0",
   "bugs": {
     "url": "https://github.com/AaronChuzb/online_dating/issues"
   },
