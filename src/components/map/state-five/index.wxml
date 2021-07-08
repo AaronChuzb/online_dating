@@ -1,0 +1,34 @@
+
+<view class="back" hover-class="button_hover">
+  <mp-icon icon="back" color="black" size="{{13}}"></mp-icon>
+</view>
+<view class="middler">
+  <view class="item">
+    <view class="number">174.5</view>
+    <view>总时间/分钟</view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="number">14.5</view>
+    <view>总里程/公里</view>
+  </view>
+</view>
+<view class="bottom">
+  <view class="content">
+    <view class="title">行程结束</view>
+    <view class="user_info">
+      <view class="left">
+        <image class="ava" src="../../../assets/images/custom.png" mode="widthFix" />
+        <view>大娱乐家</view>
+      </view>
+      <view class="right">
+        <view>本次收益</view>
+        <view>¥<text> 68.00</text></view>
+      </view>
+    </view>
+  </view>
+</view> 
+
+<view class="pos" hover-class="button_hover" bindtap="toLocation">
+  <image src="../../../assets/icon/pos.png" mode="widthFix" />
+</view>

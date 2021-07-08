@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "state-zero": "../../components/map/state-zero/index",
+    "state-one": "../../components/map/state-one/index",
+    "state-two": "../../components/map/state-two/index",
+    "state-three": "../../components/map/state-three/index",
+    "state-four": "../../components/map/state-four/index",
+    "state-five": "../../components/map/state-five/index"
+  },
+  "backgroundColor":"#F2F2F2",
+  "navigationStyle": "custom",
+  "disableScroll": true
+}

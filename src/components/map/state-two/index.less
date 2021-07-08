@@ -1,0 +1,95 @@
+.input_box{
+  position: fixed;
+  z-index: 999;
+  bottom: 112rpx;
+  left: 20rpx;
+  width: calc(100% - 40rpx);
+  height: 456rpx;
+  background: #FFFFFF;
+  box-shadow: 0 0 12rpx rgba(0, 0, 0, 0.16);
+  border-radius: 32rpx;
+}
+.title{
+  margin: 40rpx 0;
+  margin-left: 52rpx;
+  color: #3983F6;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.phone {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  input {
+    width: calc(200%);
+    position: absolute;
+    left: -200rpx;
+    top: 144rpx;
+    height: 144rpx;
+    opacity: 0;
+    line-height: 144rpx;
+  }
+  view{
+    width: 120rpx;
+    border: 1rpx solid #979797;
+    height: 144rpx;
+    text-align: center;
+    line-height: 144rpx;
+    border-radius: 8rpx;
+    font-size: 65rpx;
+    color: #3983F6;
+    font-weight: bold;
+  }
+  .activeView {
+    border-color: #3983F6;
+  }
+}
+.button_box{
+  margin-top: 54rpx;
+  display: flex;
+  justify-content: center;
+}
+.button{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  font-size: 36rpx;
+}
+.button_hover{
+  background-color:rgba(0,0,0,0.1);
+  opacity:0.7
+}
+.cancel{
+  width: 294rpx;
+  border: 2rpx solid #CCCCCC;
+  color: #CCCCCC;
+  margin-right: 10rpx;
+}
+.sure{
+  margin-left: 10rpx;
+  width: 294rpx;
+  border: 2rpx solid #3983F6;
+  background-color: #3983F6;
+  color: #FFFFFF;
+}
+.pos{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  right: 20rpx;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  bottom: 630rpx;
+  will-change: transform;
+  transition: all 1s;
+  image{
+    width: 40rpx;
+  }
+}

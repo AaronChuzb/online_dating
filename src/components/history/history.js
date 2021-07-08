@@ -30,6 +30,10 @@ Component({
         wx.navigateTo({
           url: `/pages/orderDetail/orderDetail?status=${this.data.state}`
         })
+      } else {
+        wx.navigateTo({
+          url: `/pages/map/map`
+        })
       }
     }
   }

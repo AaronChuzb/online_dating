@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/protocol/protocol",
+    "pages/map/map",
     "pages/orderDetail/orderDetail",
     "pages/orderTaking/orderTaking",
     "pages/wallet/wallet",
@@ -8,8 +10,12 @@
     "pages/withdrawal/withdrawal",
     "pages/setting/setting",
     "pages/about/about"
-    
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于地图展示"
+    }
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

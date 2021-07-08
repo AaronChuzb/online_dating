@@ -1,0 +1,18 @@
+<view class="input_box">
+  <view class="title">请输入乘客手机号码后四位</view>
+  <view class="phone">
+    <input type="number" maxlength="4" bindinput="inputValue" focus />
+    <view class="{{ veCode[0] ? 'activeView' : ''}}">{{veCode[0]}}</view>
+    <view class="{{ veCode[1] ? 'activeView' : ''}}">{{veCode[1]}}</view>
+    <view class="{{ veCode[2] ? 'activeView' : ''}}">{{veCode[2]}}</view>
+    <view class="{{ veCode[3] ? 'activeView' : ''}}">{{veCode[3]}}</view>
+  </view>
+  <view class="button_box">
+    <view class="button cancel" hover-class="button_hover" bindtap="cancel">返回</view>
+    <view class="button sure" hover-class="button_hover" bindtap="sure">确定</view>
+  </view>
+</view>
+
+<view class="pos {{ fullScreen?'pos_down':'' }}" hover-class="button_hover" bindtap="toLocation">
+  <image src="../../../assets/icon/pos.png" mode="widthFix" />
+</view>

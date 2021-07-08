@@ -1,0 +1,112 @@
+.back{
+  position: fixed;
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  left: 20rpx;
+  top: 108rpx;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+
+}
+.middler{
+  position: fixed;
+  z-index: 999;
+  margin: 0 20rpx;
+  height: 148rpx;
+  width: calc(100% - 40rpx);
+  border-radius: 32rpx;
+  background: #ffffff;
+  bottom: 424rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 32rpx;
+  .item{
+    text-align: center;
+    .number{
+      color: #3983F6;
+      font-size: 36rpx;
+    }
+  }
+  .line{
+    width: 2rpx;
+    height: 72rpx;
+    background: #F2F2F2;
+  }
+}
+.bottom{
+  position: fixed;
+  z-index: 999;
+  margin: 0 20rpx;
+  height: 296rpx;
+  width: calc(100% - 40rpx);
+  border-radius: 32rpx;
+  background: #ffffff;
+  bottom: 112rpx;
+  will-change: transform;
+  transition: all 1s;
+  .content{
+    margin-top: 40rpx;
+    margin-left: 52rpx;
+    margin-right: 50rpx;
+    .title{
+      color: #3983F6;
+    }
+    .user_info{
+      margin-top: 28rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left{
+        display: flex;
+        align-items: center;
+        .ava{
+          width: 108rpx;
+          margin-right: 12rpx;
+        }
+        :nth-child(2){
+          font-size: 16px;
+          font-weight: 500;
+          color: #333333;
+        }
+      }
+      .right{
+        text-align: center;
+        font-size: 28rpx;
+        text{
+          font-size: 56rpx;
+          line-height: 56rpx;
+        }
+      }
+    }
+  }
+}
+.pos{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  right: 20rpx;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  bottom: 592rpx;
+  image{
+    width: 40rpx;
+  }
+}
+
+.button_hover{
+  background-color:rgba(0,0,0,0.1);
+  opacity:0.7
+}
+

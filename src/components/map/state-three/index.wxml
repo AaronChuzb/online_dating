@@ -1,0 +1,28 @@
+<view class="header {{ fullScreen?'header_hidden':'' }}">
+  <view class="destination">去<text>西关富邦大厦（中山七路）</text></view>
+  <view class="status">正在前往终点位置</view>
+  <view class="time_box">
+    <view>剩余<text>2.6</text>公里</view>
+    <view class="line"></view>
+    <view>预计<text>5</text>分钟</view>  
+  </view>
+</view>
+
+<view class="bottom {{ fullScreen?'bottom_hidden':'' }}">
+  <view class="content">
+    <view class="title">行程中</view>
+    <view class="user_info">
+      <view class="left">
+        <image class="ava" src="../../../assets/images/custom.png" mode="widthFix" />
+        <view>大娱乐家</view>
+      </view>
+    </view>
+  </view>
+</view> 
+
+<view class="full {{ fullScreen?'full_down':'' }}" hover-class="button_hover" bindtap="toggleFullScreen"  wx:if="{{ state != 2 && state != 0 }}">
+  <image src="../../../assets/icon/full.png" mode="widthFix" />
+</view>
+<view class="pos {{ fullScreen?'pos_down':'' }}" hover-class="button_hover" bindtap="toLocation">
+  <image src="../../../assets/icon/pos.png" mode="widthFix" />
+</view>

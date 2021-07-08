@@ -1,0 +1,23 @@
+
+<view class="back" hover-class="button_hover" bindtap="back">
+  <mp-icon icon="back" color="black" size="{{13}}"></mp-icon>
+</view>
+<view class="middler">
+  <view class="item"><view class="dot "></view>金运路东北侧</view>
+  <view class="item"><view class="dot dot1"></view>西关富邦大厦（中山七路）</view>
+</view>
+<view class="bottom">
+  <view class="content">
+    <view class="title">订单已取消</view>
+    <view class="user_info">
+      <view class="left">
+        <image class="ava" src="../../../assets/images/custom.png" mode="widthFix" />
+        <view>大娱乐家</view>
+      </view>
+    </view>
+  </view>
+</view> 
+
+<view class="pos" hover-class="button_hover" bindtap="toLocation">
+  <image src="../../../assets/icon/pos.png" mode="widthFix" />
+</view>

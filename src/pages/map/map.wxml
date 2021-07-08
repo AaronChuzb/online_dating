@@ -1,0 +1,14 @@
+<view class="page">
+  <!-- 行程取消 -->
+  <state-zero wx:if="{{ state == 0 }}"></state-zero>
+  <!-- 接到单去接乘客 -->
+  <state-one wx:if="{{ state == 1 }}" bindcancel="cancelOrder" bindarrival="arrival"></state-one>
+  <!-- 接到乘客输入手机尾号 -->
+  <state-two wx:if="{{ state == 2 }}" bindcancel="cancelInput" bindsure="checkPhone"></state-two>
+  <!-- 行程中 -->
+  <state-three wx:if="{{ state == 3 }}"></state-three>
+  <state-four wx:if="{{ state == 4 }}"></state-four>
+  <state-five wx:if="{{ state == 5 }}"></state-five>
+
+  <map id="map" name="map" class="map" show-location="true" longitude="{{ longitude }}" latitude="{{ latitude }}"></map>
+</view>

@@ -1,0 +1,215 @@
+.header{
+  position: fixed;
+  z-index: 999;
+  top: 108rpx;
+  padding: 48rpx 52rpx;
+  height: 174rpx;
+  background: #ffffff;
+  width: calc(100% - 144rpx);
+  margin: 0 20rpx;
+  border-radius: 32rpx;
+  will-change: transform;
+  transition: all 1s;
+  color: #222222;
+  .destination{
+    font-size: 36rpx;
+    line-height: 36rpx;
+    font-weight: 400;
+    text{
+      color: #3983F6;
+    }
+  }
+  .status{
+    margin-top: 30rpx;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    font-weight: 400;
+
+  }
+  .time_box{
+    height: 84rpx;
+    border-top: 2rpx solid #F2F2F2;
+    margin-top: 42rpx;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 36rpx;
+    font-weight: 400;
+    line-height: 36rpx;
+    color: #222222;
+    opacity: 1;;
+    .line{
+      width: 2rpx;
+      height: 52rpx;
+      background: #F2F2F2;
+    }
+    text{
+      color: #3983F6;
+    }
+  }
+}
+.header_hidden{
+  transform: translateY(-386rpx);
+}
+.middler{
+  position: fixed;
+  z-index: 999;
+  margin: 0 20rpx;
+  height: 148rpx;
+  width: calc(100% - 40rpx);
+  border-radius: 32rpx;
+  background: #ffffff;
+  bottom: 510rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  will-change: transform;
+  transition: all 1s;
+  .item{
+    display: flex;
+    align-items: center;
+    margin-left: 52rpx;
+    .dot{
+      border-radius: 50%;
+      border: 4rpx solid #FFBA19;
+      width: 8rpx;
+      height: 8rpx;
+      margin-right: 20rpx;
+    }
+    .dot1{
+      border: 4rpx solid #F14942;
+    }
+  }
+}
+.middler_hidden{
+  transform: translateY(658rpx);
+}
+.button{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 16rpx;
+}
+.bottom{
+  position: fixed;
+  z-index: 999;
+  margin: 0 20rpx;
+  height: 382rpx;
+  width: calc(100% - 40rpx);
+  border-radius: 32rpx;
+  background: #ffffff;
+  bottom: 112rpx;
+  will-change: transform;
+  transition: all 1s;
+  .content{
+    margin-top: 40rpx;
+    margin-left: 52rpx;
+    margin-right: 50rpx;
+    .title{
+      color: #3983F6;
+    }
+    .user_info{
+      margin-top: 28rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left{
+        display: flex;
+        align-items: center;
+        .ava{
+          width: 108rpx;
+          margin-right: 12rpx;
+        }
+        :nth-child(2){
+          font-size: 16px;
+          font-weight: 500;
+          color: #333333;
+        }
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        :nth-child(1){
+          margin-right: 20rpx;
+        }
+        .icon{
+          width: 82rpx;
+        }
+      }
+      
+    }
+    .button_box{
+      display: flex;
+      justify-content: center;
+      margin-top: 48rpx;
+      font-size: 36rpx;
+      font-weight: 400;
+      .cancle{
+        width: 294rpx;
+        border: 2rpx solid #CCCCCC;
+        color: #CCCCCC;
+        margin-right: 10rpx;
+      }
+      .arrival{
+        width: 294rpx;
+        background: #3983F6;
+        border: 2rpx solid #3983F6;
+        color: #ffffff;
+        margin-left: 10rpx;
+      }
+    }
+  }
+}
+.bottom_hidden{
+  transform: translateY(494rpx);
+}
+.button_hover{
+  background-color:rgba(0,0,0,0.1);
+  opacity:0.7
+}
+
+.full{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  right: 20rpx;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  bottom: 802rpx;
+  will-change: transform;
+  transition: all 1s;
+  image{
+    width: 40rpx;
+  }
+}
+.pos{
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  right: 20rpx;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  bottom: 694rpx;
+  will-change: transform;
+  transition: all 1s;
+  image{
+    width: 40rpx;
+  }
+}
+
+.full_down{
+  transform: translateY(530rpx);
+}
+.pos_down{
+  transform: translateY(530rpx);
+}

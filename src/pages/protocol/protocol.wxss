@@ -1,0 +1,10 @@
+.content {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 48rpx 30rpx;
+  text-indent: 2em;
+  color: #333333;
+  line-height: 60rpx;
+}
