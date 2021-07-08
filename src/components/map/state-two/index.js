@@ -23,6 +23,9 @@ Component({
       let arr = [...value];
       this.setData({ veCode: arr })
     },
+    toLocation(){
+      this.triggerEvent('location')
+    },
     cancel() {
       this.triggerEvent('cancel')
     },

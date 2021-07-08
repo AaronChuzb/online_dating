@@ -24,6 +24,10 @@ Page({
       console.log('location change', res)
     }
   },
+  toLocation(){
+    let mapCtx = wx.createMapContext("map")
+    mapCtx.moveToLocation()
+  },
   cancelOrder(){
     var that = this
     wx.showModal({
@@ -35,6 +39,11 @@ Page({
           })
         }
       }
+    })
+  },
+  callPhone(){
+    wx.makePhoneCall({
+      phoneNumber: '10086',
     })
   },
   arrival(){

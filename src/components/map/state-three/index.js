@@ -9,10 +9,6 @@
 // components/map/header/index.js
 Component({
   properties: {
-    isFullScreen: {
-      type: Boolean,
-      default: false
-    }
   },
   data: {
     fullScreen: false,
@@ -31,30 +27,7 @@ Component({
       })
     },
     toLocation(){
-      let mpCtx = wx.createMapContext("map");
-      mpCtx.moveToLocation();
+      this.triggerEvent('location')
     },
-    callPhone(){
-      wx.makePhoneCall({
-        phoneNumber: '10086'
-      })
-     },
-    cancelOrder(){
-      var that = this
-      wx.showModal({
-        content: '确定取消订单？',
-        success (res) {
-          if (res.confirm) {
-            
-          }
-        }
-      })
-    }, 
-    cancel(){
-      this.triggerEvent('cancel')
-    },
-    arrival(){
-      this.triggerEvent('arrival')
-    }
   }
 })

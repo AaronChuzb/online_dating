@@ -27,6 +27,12 @@ Component({
         fullScreen: !this.data.fullScreen
       })
     },
+    callPhone(){
+      this.triggerEvent('call')
+    },
+    toLocation(){
+      this.triggerEvent('location')
+    },
     cancel(){
       this.triggerEvent('cancel')
     },
