@@ -32,7 +32,7 @@ Component({
         })
       } else {
         wx.navigateTo({
-          url: `/pages/map/map`
+          url: '/pages/map/map'
         })
       }
     }

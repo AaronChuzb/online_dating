@@ -7,7 +7,9 @@
   <state-two wx:if="{{ state == 2 }}" bindcancel="cancelInput" bindsure="checkPhone"></state-two>
   <!-- 行程中 -->
   <state-three wx:if="{{ state == 3 }}" bindlocation="toLocation"></state-three>
+  <!-- 收费 -->
   <state-four wx:if="{{ state == 4 }}"></state-four>
+  <!-- 行程结束 -->
   <state-five wx:if="{{ state == 5 }}"></state-five>
 
   <map id="map" name="map" class="map" show-location="true" longitude="{{ longitude }}" latitude="{{ latitude }}"></map>

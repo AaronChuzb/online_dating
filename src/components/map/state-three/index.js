@@ -11,9 +11,9 @@ Component({
   properties: {
   },
   data: {
-    fullScreen: false,
+    fullScreen: false
   },
- /*  observers: {
+  /*  observers: {
     isFullScreen: function (isFullScreen) {
       this.setData({
         fullScreen: isFullScreen
@@ -21,13 +21,13 @@ Component({
     }
   }, */
   methods: {
-    toggleFullScreen(){
+    toggleFullScreen () {
       this.setData({
         fullScreen: !this.data.fullScreen
       })
     },
-    toLocation(){
+    toLocation () {
       this.triggerEvent('location')
-    },
+    }
   }
 })

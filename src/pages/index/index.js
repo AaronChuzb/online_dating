@@ -1,18 +1,13 @@
 /*
  * @Author: AaronChu
  * @Date: 2021-07-05 16:08:10
- * @LastEditTime: 2021-07-07 17:09:59
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
+ * @LastEditors: AaronChu
+ * @LastEditTime: 2021-07-08 18:11:26
  * @FilePath: \online_dating\src\pages\index\index.js
  */
-// pages/index/index.js
 const app = getApp()
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     showDrawer: false,
     userInfoList: [
@@ -42,17 +37,9 @@ Page({
       url: '/pages/orderTaking/orderTaking'
     })
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
 
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
 
   },

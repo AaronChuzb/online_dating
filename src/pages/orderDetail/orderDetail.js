@@ -13,7 +13,7 @@ Page({
   },
 
   onLoad: function (options) {
-    if(options){
+    if (options) {
       this.setData({
         status: options.status
       })

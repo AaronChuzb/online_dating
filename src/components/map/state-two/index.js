@@ -6,30 +6,22 @@ Component({
   properties: {
 
   },
-
-  /**
-   * 组件的初始数据
-   */
   data: {
-    veCode: new Array(),
+    veCode: []
   },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
-    inputValue(e) {
-      let value = e.detail.value;
-      let arr = [...value];
+    inputValue (e) {
+      const value = e.detail.value
+      const arr = [...value]
       this.setData({ veCode: arr })
     },
-    toLocation(){
+    toLocation () {
       this.triggerEvent('location')
     },
-    cancel() {
+    cancel () {
       this.triggerEvent('cancel')
     },
-    sure(){
+    sure () {
       this.triggerEvent('sure', this.data.veCode)
     }
   }

@@ -15,9 +15,9 @@ Component({
     }
   },
   data: {
-    fullScreen: false,
+    fullScreen: false
   },
- /*  observers: {
+  /*  observers: {
     isFullScreen: function (isFullScreen) {
       this.setData({
         fullScreen: isFullScreen
@@ -25,9 +25,9 @@ Component({
     }
   }, */
   methods: {
-    back(){
+    back () {
       wx.navigateBack({
-        delta: 0,
+        delta: 0
       })
     }
   }

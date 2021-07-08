@@ -1,6 +1,6 @@
 
 <view class="back" hover-class="button_hover">
-  <mp-icon icon="back" color="black" size="{{13}}"></mp-icon>
+  <mp-icon icon="back" color="black" size="{{ 13 }}"></mp-icon>
 </view>
 <view class="middler">
   <view class="item">

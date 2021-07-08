@@ -22,7 +22,7 @@ Component({
       { title: '设置', icon: '../../assets/icon/setting.png', path: '/pages/setting/setting' }
     ],
     star: 3,
-    nonestar: 2,
+    nonestar: 2
   },
   observers: {
     rate: function (rate) {

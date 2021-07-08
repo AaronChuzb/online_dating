@@ -22,24 +22,24 @@ Component({
     },
     gap: {
       type: Number,
-      default: 20,
+      default: 20
     }
   },
   data: {
     rate: 3,
     noneRate: 2,
     width: 64,
-    gaps: 20,
+    gaps: 20
   },
   observers: {
-    'value,size,gap': function (value,size,gap) {
+    'value,size,gap': function (value, size, gap) {
       this.setData({
         rate: value,
         noneRate: 5 - value,
         width: size,
         gaps: gap
       })
-    },
+    }
   },
   methods: {
 

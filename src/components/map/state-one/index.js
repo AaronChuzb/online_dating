@@ -9,12 +9,12 @@
 // components/map/header/index.js
 Component({
   properties: {
-    
+
   },
   data: {
-    fullScreen: false,
+    fullScreen: false
   },
- /*  observers: {
+  /*  observers: {
     isFullScreen: function (isFullScreen) {
       this.setData({
         fullScreen: isFullScreen
@@ -22,21 +22,21 @@ Component({
     }
   }, */
   methods: {
-    toggleFullScreen(){
+    toggleFullScreen () {
       this.setData({
         fullScreen: !this.data.fullScreen
       })
     },
-    callPhone(){
+    callPhone () {
       this.triggerEvent('call')
     },
-    toLocation(){
+    toLocation () {
       this.triggerEvent('location')
     },
-    cancel(){
+    cancel () {
       this.triggerEvent('cancel')
     },
-    arrival(){
+    arrival () {
       this.triggerEvent('arrival')
     }
   }
