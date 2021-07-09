@@ -1,16 +1,15 @@
 /*
- * @Author: your name
+ * @Author: AaronChu
  * @Date: 2021-07-05 16:36:35
- * @LastEditTime: 2021-07-07 11:56:22
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \online_dating\utils\loginState.js
+ * @LastEditors: AaronChu
+ * @LastEditTime: 2021-07-09 10:10:06
+ * @FilePath: \online_dating\src\utils\loginState.js
  */
+
 
 const loginState = {
 
   /**
-   *
    *
    * @param {Function} callBack 登录后的回调函数
    */

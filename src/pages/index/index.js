@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-05 16:08:10
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-08 18:11:26
+ * @LastEditTime: 2021-07-09 09:56:04
  * @FilePath: \online_dating\src\pages\index\index.js
  */
 const app = getApp()
@@ -17,6 +17,9 @@ Page({
     ]
   },
 
+  /**
+   * @description: 登录，首先检查全局登录状态变量，然后调用方法登录并保存数据。
+   */
   login () {
     if (!app.globalData.isLogin) {
       wx.$login.getUserInfo(() => {
@@ -24,6 +27,9 @@ Page({
       })
     }
   },
+  /**
+   * @description: 首页立即认证按钮，点击前先校验是否登录，登录后触发回调函数。
+   */
   certification () {
     wx.$login.status(() => {
       wx.navigateTo({
@@ -31,7 +37,9 @@ Page({
       })
     })
   },
-  // 去抢单页面
+  /**
+   * @description: 首页按钮点击去抢单页面
+   */
   toTakeOrder () {
     wx.navigateTo({
       url: '/pages/orderTaking/orderTaking'

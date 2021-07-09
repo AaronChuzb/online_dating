@@ -1,3 +1,10 @@
+/*
+ * @Author: AaronChu
+ * @Date: 2021-07-08 11:05:54
+ * @LastEditors: AaronChu
+ * @LastEditTime: 2021-07-09 10:01:18
+ * @FilePath: \online_dating\src\pages\map\map.js
+ */
 
 // pages/map/map.js
 Page({
@@ -15,10 +22,16 @@ Page({
       console.log('location change', res)
     }
   },
+  /**
+   * @description: 回到地图中心点，用户的位置
+   */
   toLocation () {
     const mapCtx = wx.createMapContext('map')
     mapCtx.moveToLocation()
   },
+  /**
+   * @description: 取消订单，取消前先弹窗
+   */
   cancelOrder () {
     const that = this
     wx.showModal({
@@ -32,22 +45,34 @@ Page({
       }
     })
   },
+  /**
+   * @description: 拨打电话
+   */
   callPhone () {
     wx.makePhoneCall({
       phoneNumber: '10086'
     })
   },
+  /**
+   * @description: 到达用户接驾地点
+   */
   arrival () {
-    console.log('到达')
     this.setData({
       state: this.data.state + 1
     })
   },
+  /**
+   * @description: 输入尾号页面，点击返回。
+   */
   cancelInput () {
     this.setData({
       state: 1
     })
   },
+  /**
+   * @description: 检查并显示输入的尾号 TODO: 尾号校验
+   * @param {Object} e
+   */
   checkPhone (e) {
     let phone = ''
     e.detail.forEach(item => {
@@ -62,8 +87,8 @@ Page({
   },
 
   onLoad: function (options) {
-    wx.onLocationChange(this.data._locationChangeFn)
     const that = this
+    // 获取用户初始地址
     wx.getLocation({
       type: 'gcj02',
       success (res) {
@@ -73,6 +98,8 @@ Page({
         })
       }
     })
+    // 添加地址变动监听函数
+    wx.onLocationChange(this.data._locationChangeFn)
   },
   onShow: function () {
 

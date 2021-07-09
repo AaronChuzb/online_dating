@@ -1,12 +1,10 @@
 /*
  * @Author: AaronChu
  * @Date: 2021-07-07 09:26:52
- * @LastEditTime: 2021-07-07 18:26:03
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \online_dating\pages\wallet\wallet.js
+ * @LastEditors: AaronChu
+ * @LastEditTime: 2021-07-09 10:08:45
+ * @FilePath: \online_dating\src\pages\wallet\wallet.js
  */
-// pages/wallet/wallet.js
 import {
   formatDate
 } from '../../utils/util'
