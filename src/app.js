@@ -24,10 +24,10 @@
  *          \  \ `_.   \_ __\ /__ _/   .-` /  /
  *      =====`-.____`.___ \_____/___.-`___.-'=====
  *                        `=---='
- * 
- * 
+ *
+ *
  *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
+ *
  *            佛祖保佑       永不宕机     永无BUG
  */
 
@@ -49,7 +49,7 @@ App({
       this.globalData.isLogin = true
     } else {
       console.log('[app.js: onLaunch()]:未登录')
-      this.globalData.isLogin = false 
+      this.globalData.isLogin = false
     }
   },
   globalData: {

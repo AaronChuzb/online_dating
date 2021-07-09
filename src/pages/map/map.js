@@ -86,7 +86,7 @@ Page({
       state: 3
     })
   },
-  inputMoney(e){
+  inputMoney (e) {
     wx.showToast({
       title: e.detail,
       icon: 'none'

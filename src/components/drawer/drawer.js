@@ -28,7 +28,7 @@ Component({
     nonestar: 2
   },
   observers: {
-    'rate,userInfo': function (rate,userInfo) {
+    'rate,userInfo': function (rate, userInfo) {
       this.setData({
         star: rate,
         nonestar: 5 - rate,
@@ -46,7 +46,7 @@ Component({
         })
       }
     },
-    
+
     drawer (e) {
       const status = e.currentTarget.dataset.status
       this.setData({
@@ -59,20 +59,20 @@ Component({
         url: url
       })
     },
-    getUserInfo(){
-      let nickName = `user.nickName`
-      let avatarUrl = `user.avatarUrl`
-      if(app.globalData.isLogin){
+    getUserInfo () {
+      const nickName = 'user.nickName'
+      const avatarUrl = 'user.avatarUrl'
+      if (app.globalData.isLogin) {
         this.setData({
-          [nickName]: wx.getStorageSync('nickName'),
-          [avatarUrl]: wx.getStorageSync('avatarUrl')
+          [ nickName ]: wx.getStorageSync('nickName'),
+          [ avatarUrl ]: wx.getStorageSync('avatarUrl')
         })
       } else {
         this.setData({
-          [nickName]: '点击登录',
-          [avatarUrl]: '../../assets/images/ava.png'
+          [ nickName ]: '点击登录',
+          [ avatarUrl ]: '../../assets/images/ava.png'
         })
       }
-    },
+    }
   }
 })

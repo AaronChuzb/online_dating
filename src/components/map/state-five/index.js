@@ -24,7 +24,7 @@ Component({
         fullScreen: !this.data.fullScreen
       })
     },
-    back(){
+    back () {
       wx.navigateBack({
         delta: 0
       })

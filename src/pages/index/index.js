@@ -13,7 +13,7 @@ Page({
     userHistoryInfo: {
       numberOfOrder: 0, // 订单数
       totalRevenue: 0, // 总收益
-      mileage: 0, // 里程数
+      mileage: 0 // 里程数
     },
     user: {
       nickName: '点击登录',
@@ -21,7 +21,7 @@ Page({
       isCertification: false,
       phone: '',
       star: 0
-    },
+    }
   },
 
   /**
@@ -55,18 +55,18 @@ Page({
     })
   },
 
-  getUserInfo(){
-    let nickName = `user.nickName`
-    let avatarUrl = `user.avatarUrl`
-    if(app.globalData.isLogin){
+  getUserInfo () {
+    const nickName = 'user.nickName'
+    const avatarUrl = 'user.avatarUrl'
+    if (app.globalData.isLogin) {
       this.setData({
-        [nickName]: wx.getStorageSync('nickName'),
-        [avatarUrl]: wx.getStorageSync('avatarUrl')
+        [ nickName ]: wx.getStorageSync('nickName'),
+        [ avatarUrl ]: wx.getStorageSync('avatarUrl')
       })
     } else {
       this.setData({
-        [nickName]: '点击登录',
-        [avatarUrl]: '../../assets/images/ava.png'
+        [ nickName ]: '点击登录',
+        [ avatarUrl ]: '../../assets/images/ava.png'
       })
     }
   },

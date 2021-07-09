@@ -29,7 +29,7 @@ Component({
     toLocation () {
       this.triggerEvent('location')
     },
-    arrival(){
+    arrival () {
       this.triggerEvent('arrival')
     }
   }

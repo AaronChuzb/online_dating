@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-07 15:34:06
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 10:08:25
+ * @LastEditTime: 2021-07-09 11:38:57
  * @FilePath: \online_dating\src\pages\orderTaking\orderTaking.js
  */
 // 不参与UI刷新的数据放在此处，减少setData次数优化性能。
@@ -60,7 +60,6 @@ Page({
 
   },
   onLoad: function (options) {
-    const that = this
     // 获取系统的宽高
     wx.getSystemInfo({
       success: function (res) {

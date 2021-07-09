@@ -5,7 +5,7 @@
  * @LastEditTime: 2021-07-09 10:27:06
  * @FilePath: \online_dating\src\pages\setting\setting.js
  */
-const app = getApp();
+const app = getApp()
 
 Page({
   data: {
@@ -14,7 +14,7 @@ Page({
   /**
    * @description: 退出登录，弹窗确认并清除本地缓存。
    */
-  logout(){
+  logout () {
     wx.showModal({
       content: '退出登录将清除您缓存的数据。',
       success: function (res) {
@@ -26,16 +26,16 @@ Page({
                 title: '退出登录成功',
                 icon: 'none'
               })
-              setTimeout(()=>{
+              setTimeout(() => {
                 wx.redirectTo({
                   url: '/pages/index/index'
                 })
-              },800)
+              }, 800)
             }
           })
         }
       }
-    });
+    })
   },
   onLoad: function (options) {
 
