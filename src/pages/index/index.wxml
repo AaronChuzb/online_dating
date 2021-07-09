@@ -41,7 +41,7 @@
     <scroll-view scroll-y="true" style="height: calc(100vh - 618rpx);margin-top: 28rpx;">
       <!-- 骨架屏，获取数据前展示， -->
       <!-- <ui-skeleton wx:for="{{ 4 }}" wx:key="index"></ui-skeleton> -->
-      <ui-history wx:for="{{ 3 }}" wx:key="index" status="{{ index + 1 }}"></ui-history>
+      <ui-history wx:for="{{ historyList }}" wx:key="index" data="{{ item }}"></ui-history>
       <!-- 接单按钮 -->
       <view class="taking" hover-class="taking-hover" bindtap="toTakeOrder">
         <image class="font" src="../../assets/icon/jd.png" mode="widthFix" />

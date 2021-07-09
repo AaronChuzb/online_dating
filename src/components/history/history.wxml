@@ -1,14 +1,14 @@
 <view class="card" bindtap="checkDetail">
   <view class="left">
-    <view class="item"><view class="dot"></view> 2021年3月22日 14：07</view>
-    <view class="item"><view class="dot dot1"></view>金运路东北侧</view>
-    <view class="item"><view class="dot dot2"></view>西关富邦大厦（中山七路）</view>
-    <view class="money"><text>¥</text>68.00</view>
+    <view class="item"><view class="dot"></view>{{ pageData.date }}</view>
+    <view class="item"><view class="dot dot1"></view>{{ pageData.outset }}</view>
+    <view class="item"><view class="dot dot2"></view>{{ pageData.end }}</view>
+    <view class="money"><text>¥</text>{{ pageData.price }}.00</view>
   </view>
   <view class="right">
   <!-- TODO: 三种状态需要判断 -->
-    <view class="status" style="{{ state != 1?'color: #CCCCCC;':'' }}">{{ state == 1?'进行中':state == 2?'已完成':state == 3?'已取消':'' }}</view>
-    <image class="ava" src="../../assets/images/custom.png" mode="widthFix"  />
-    <view class="user_name">大娱乐家</view>
+    <view class="status" style="{{ pageData.status != 1?'color: #CCCCCC;':'' }}">{{ pageData.status == 1?'进行中':pageData.status == 2?'已完成':pageData.status == 3?'已取消':'' }}</view>
+    <image class="ava" src="{{ pageData.userimg }}" mode="widthFix"  />
+    <view class="user_name">{{ pageData.username }}</view>
   </view>
 </view>

@@ -1,10 +1,10 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/orderTaking/orderTaking",
     "pages/protocol/protocol",
     "pages/map/map",
     "pages/orderDetail/orderDetail",
-    "pages/orderTaking/orderTaking",
     "pages/wallet/wallet",
     "pages/certification/certification",
     "pages/withdrawal/withdrawal",

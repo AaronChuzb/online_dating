@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-05 16:08:10
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 11:03:12
+ * @LastEditTime: 2021-07-09 13:53:14
  * @FilePath: \online_dating\src\pages\index\index.js
  */
 const app = getApp()
@@ -21,7 +21,12 @@ Page({
       isCertification: false,
       phone: '',
       star: 0
-    }
+    },
+    historyList: [
+      { date: '2021年3月22日 11:07', outset: '海港花园', end: '磨碟沙地铁站', price: 11, username: '张三', userimg: '../../assets/images/custom.png', status: 1 },
+      { date: '2021年3月22日 15:23', outset: '广州塔', end: '荔湾广场', price: 58, username: '李四', userimg: '../../assets/images/custom.png', status: 2 },
+      { date: '2021年3月22日 18:05', outset: '广东省第二人民医院', end: '琶洲塔', price: 15, username: '王五', userimg: '../../assets/images/custom.png', status: 3 },
+    ]
   },
 
   /**

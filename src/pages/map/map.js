@@ -2,11 +2,10 @@
  * @Author: AaronChu
  * @Date: 2021-07-08 11:05:54
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 11:18:09
+ * @LastEditTime: 2021-07-09 15:59:13
  * @FilePath: \online_dating\src\pages\map\map.js
  */
-
-// pages/map/map.js
+import { authLocation } from '../../utils/util.js'
 Page({
   data: {
     state: 1, // 页面状态，页面四种状态控制变量，
@@ -17,10 +16,7 @@ Page({
     // 5：行程结束
     // 0：行程取消
     latitude: 0,
-    longitude: 0,
-    _locationChangeFn: (res) => {
-      console.log('location change', res)
-    }
+    longitude: 0
   },
   /**
    * @description: 回到地图中心点，用户的位置
@@ -95,8 +91,10 @@ Page({
       state: 5
     })
   },
-
   onLoad: function (options) {
+    
+  },
+  onShow: function () {
     const that = this
     // 获取用户初始地址
     wx.getLocation({
@@ -106,12 +104,10 @@ Page({
           latitude: res.latitude,
           longitude: res.longitude
         })
+      },
+      fail (err) {
+        authLocation()
       }
     })
-    // 添加地址变动监听函数
-    wx.onLocationChange(this.data._locationChangeFn)
-  },
-  onShow: function () {
-
   }
 })
