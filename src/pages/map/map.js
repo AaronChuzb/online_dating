@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-08 11:05:54
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 10:01:18
+ * @LastEditTime: 2021-07-09 11:18:09
  * @FilePath: \online_dating\src\pages\map\map.js
  */
 
@@ -79,10 +79,20 @@ Page({
       phone = phone + item
     })
     wx.showToast({
-      title: '手机尾号是' + phone
+      title: '手机尾号是' + phone,
+      icon: 'none'
     })
     this.setData({
       state: 3
+    })
+  },
+  inputMoney(e){
+    wx.showToast({
+      title: e.detail,
+      icon: 'none'
+    })
+    this.setData({
+      state: 5
     })
   },
 

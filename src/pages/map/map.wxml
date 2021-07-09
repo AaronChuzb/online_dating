@@ -6,9 +6,9 @@
   <!-- 接到乘客输入手机尾号 -->
   <state-two wx:if="{{ state == 2 }}" bindcancel="cancelInput" bindsure="checkPhone"></state-two>
   <!-- 行程中 -->
-  <state-three wx:if="{{ state == 3 }}" bindlocation="toLocation"></state-three>
+  <state-three wx:if="{{ state == 3 }}" bindlocation="toLocation" bindarrival="arrival"></state-three>
   <!-- 收费 -->
-  <state-four wx:if="{{ state == 4 }}"></state-four>
+  <state-four wx:if="{{ state == 4 }}" bindsure="inputMoney"></state-four>
   <!-- 行程结束 -->
   <state-five wx:if="{{ state == 5 }}"></state-five>
 

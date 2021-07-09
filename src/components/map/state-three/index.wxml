@@ -16,6 +16,10 @@
         <image class="ava" src="../../../assets/images/custom.png" mode="widthFix" />
         <view>大娱乐家</view>
       </view>
+      <view class="button" style="background: ##3983F6" bindtap="arrival">
+        已到达，静态演示用
+      </view>
+        
     </view>
   </view>
 </view> 

@@ -2,10 +2,9 @@
  * @Author: AaronChu
  * @Date: 2021-07-05 16:36:35
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 10:10:06
+ * @LastEditTime: 2021-07-09 10:28:33
  * @FilePath: \online_dating\src\utils\loginState.js
  */
-
 
 const loginState = {
 
@@ -65,7 +64,9 @@ const loginState = {
    * @returns {Boolean} 未登录会弹出窗口提示用户登录，用户取消什么都不做，点击确定会进行登录流程，随后调用回调函数，如果用户已登录直接调用回调函数
    */
   status (callBack) {
-    if (!wx.getStorageSync('token')) {
+    // TODO: 静态暂时改变验证方式
+    // if (!wx.getStorageSync('token')) {
+    if (!wx.getStorageSync('nickName')) {
       const that = this
       wx.showModal({
         title: '',

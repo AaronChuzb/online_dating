@@ -57,8 +57,8 @@
       <ui-rate value="{{ 4 }}" size="{{ 64 }}" gap="{{ 20 }}"></ui-rate>
     </view>
     <view class="button_box" style="{{ status == 3?'margin-top: 544rpx;':'' }}">
-      <view class="button feed">投诉反馈</view>
-      <view class="button service">联系客服</view>  
+      <view class="button feed" hover-class="button_hover">投诉反馈</view>
+      <view class="button service" hover-class="button_hover">联系客服</view>  
     </view>
     <view style="height:148rpx"></view>
       

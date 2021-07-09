@@ -1,5 +1,5 @@
 
-<view class="back" hover-class="button_hover">
+<view class="back" hover-class="button_hover" bindtap="back">
   <mp-icon icon="back" color="black" size="{{ 13 }}"></mp-icon>
 </view>
 <view class="middler">

@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-05 16:04:43
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 10:11:55
+ * @LastEditTime: 2021-07-09 10:21:12
  * @FilePath: \online_dating\src\app.js
  */
 /*
@@ -40,14 +40,16 @@ App({
     // wx.$api = api
     wx.$login = loginState
     // wx.$uploader = uploader
-    const token = wx.getStorageSync('token')
+    // const token = wx.getStorageSync('token')
+    // 调试需要
+    const token = wx.getStorageSync('nickName')
     console.log()
     if (token !== '') {
       console.log('[app.js: onLaunch()]:已登录')
       this.globalData.isLogin = true
     } else {
       console.log('[app.js: onLaunch()]:未登录')
-      this.globalData.isLogin = false
+      this.globalData.isLogin = false 
     }
   },
   globalData: {

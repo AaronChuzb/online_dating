@@ -1,6 +1,6 @@
 <view class="page">
   <view class="header">
-    <ui-drawer rate="{{ 4 }}" class="mine"></ui-drawer>
+    <ui-drawer rate="{{ 4 }}" class="mine" bindlogin="getUserInfo" userInfo="{{ user }}"></ui-drawer>
     <view class="title">逸绽出行</view>
     <image src="../../assets/icon/car.png" mode="widthFix" style="width:65px;margin-right: -40rpx;margin-top:31px"></image>
   </view>
@@ -8,35 +8,33 @@
     <view class="card">
       <view class="top">
         <view class="left" bindtap="login">
-          <image class="ava" mode="scaleToFill" src="../../assets/images/ava.png"></image>
-          <!-- <view class="user_name">点击登录</view> -->
+          <image class="ava" mode="scaleToFill" src="{{ user.avatarUrl }}"></image>
+          <view class="user_name">{{ user.nickName }}</view>
           <!-- 认证后才出现的内容 -->
-          <view class="user_info">
-            <view class="name">李成新</view>
+          <view class="user_info" wx:if="{{ user.isCertification }}">
+            <view class="name">{{ user.nickName }}</view>
             <view class="item">
-              <!-- <image class="star" src="../../assets/icon/star.png" mode="widthFix" wx:for="{{ 3 }}" wx:key="index"></image>
-              <image class="star" src="../../assets/icon/nonestar.png" mode="widthFix" wx:for="{{ 2 }}" wx:key="index"></image> -->
-              <ui-rate value="{{ 4 }}" size="{{ 32 }}" gap="{{ 8 }}"></ui-rate>
+              <ui-rate value="{{ user.star }}" size="{{ 32 }}" gap="{{ 8 }}"></ui-rate>
             </view>
           </view>
           
         </view>
-        <view class="right" bindtap="certification">立即认证</view>
+        <view class="right" bindtap="certification" wx:if="{{ !user.isCertification }}">立即认证</view>
       </view>
       <view class="bottom">
         <view class="item">
           <view class="title">订单数</view>
-          <view class="count">500</view>
+          <view class="count">{{ userHistoryInfo.numberOfOrder }}</view>
         </view>
         <view class="line"></view>
         <view class="item">
           <view class="title">总收益</view>
-          <view class="count">300000.00</view>
+          <view class="count">{{ userHistoryInfo.totalRevenue }}.00</view>
         </view>
         <view class="line"></view>
         <view class="item">
           <view class="title">里程数</view>
-          <view class="count">10000KM</view>
+          <view class="count">{{ userHistoryInfo.mileage }}KM</view>
         </view>
       </view>
     </view>

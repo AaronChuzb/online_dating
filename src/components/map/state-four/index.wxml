@@ -1,6 +1,6 @@
 <view class="input_box">
   <view class="title">费用结算</view>
-  <input type="number" placeholder="请输入打表金额" />
+  <input type="number" placeholder="请输入打表金额" model:value="{{ money }}" />
   <view class="money">预估金额￥<text>68.00</text> </view>
   <view class="button" hover-class="button_hover" bindtap="sure">确定</view>
 

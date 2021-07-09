@@ -3,19 +3,19 @@
 <view class='mask' bindtap="drawer" data-status="{{ false }}" wx:if="{{show}}"></view>
 <view class="drawer {{show? 'show':''}}">
   <!-- <image src="../../assets/images/back.png" mode="scaleToFill" class="back"></image> -->
-  <view class="header">
-    <image class="ava" mode="scaleToFill" src="../../assets/images/ava.png" />
+  <view class="header" bindtap="login">
+    <image class="ava" mode="scaleToFill" src="{{ user.avatarUrl }}" />
     <view class="right">
     <!-- 第一行 -->
       <view class="item">
-        <view class="name">李程新</view>
-        <view class="tag">已认证</view>
+        <view class="name">{{ user.nickName }}</view>
+        <!-- <view class="tag">已认证</view> -->
       </view>
-      <!-- 第二行 -->
-      <view class="item phone">156*****088</view>
-      <!-- 第三行 -->
+      <!-- 电话，认证后才显示 -->
+      <view wx:if="{{ user.isCertification }}" class="item phone">156*****088</view>
+      <!-- 用户星级，认证后才显示 -->
       <view class="item rate">
-        <ui-rate value="{{ 3 }}" gap="{{ 8 }}" size="{{ 32 }}"></ui-rate>
+        <ui-rate wx:if="{{ user.isCertification }}" value="{{ user.star }}" gap="{{ 8 }}" size="{{ 32 }}"></ui-rate>
       </view>
     </view>
   </view>
