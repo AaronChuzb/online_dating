@@ -18,15 +18,15 @@ Component({
     }
   },
   data: {
-    pageData: { 
+    pageData: {
       date: '2021年3月22日 14:07',
-      outset: '金运路东北侧', 
-      end: '西关富邦大厦（中山七路）', 
-      price: 68, 
-      username: '张三', 
-      userimg: '../../assets/images/custom.png', 
-      status: 1 
-    },
+      outset: '金运路东北侧',
+      end: '西关富邦大厦（中山七路）',
+      price: 68,
+      username: '张三',
+      userimg: '../../assets/images/custom.png',
+      status: 1
+    }
   },
   observers: {
     data: function (data) {

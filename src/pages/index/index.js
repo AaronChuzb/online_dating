@@ -25,7 +25,7 @@ Page({
     historyList: [
       { date: '2021年3月22日 11:07', outset: '海港花园', end: '磨碟沙地铁站', price: 11, username: '张三', userimg: '../../assets/images/custom.png', status: 1 },
       { date: '2021年3月22日 15:23', outset: '广州塔', end: '荔湾广场', price: 58, username: '李四', userimg: '../../assets/images/custom.png', status: 2 },
-      { date: '2021年3月22日 18:05', outset: '广东省第二人民医院', end: '琶洲塔', price: 15, username: '王五', userimg: '../../assets/images/custom.png', status: 3 },
+      { date: '2021年3月22日 18:05', outset: '广东省第二人民医院', end: '琶洲塔', price: 15, username: '王五', userimg: '../../assets/images/custom.png', status: 3 }
     ]
   },
 

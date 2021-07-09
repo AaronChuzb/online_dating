@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-08 11:05:54
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 15:59:13
+ * @LastEditTime: 2021-07-09 18:05:19
  * @FilePath: \online_dating\src\pages\map\map.js
  */
 import { authLocation } from '../../utils/util.js'
@@ -92,7 +92,7 @@ Page({
     })
   },
   onLoad: function (options) {
-    
+
   },
   onShow: function () {
     const that = this
@@ -105,7 +105,7 @@ Page({
           longitude: res.longitude
         })
       },
-      fail (err) {
+      fail () {
         authLocation()
       }
     })

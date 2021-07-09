@@ -2,7 +2,7 @@
  * @Author: AaronChu
  * @Date: 2021-07-05 16:04:43
  * @LastEditors: AaronChu
- * @LastEditTime: 2021-07-09 15:26:08
+ * @LastEditTime: 2021-07-09 18:05:45
  * @FilePath: \online_dating\src\app.js
  */
 /*
@@ -37,7 +37,6 @@ import loginState from './utils/loginState'
 // import uploader from './utils/uploader'
 App({
   onLaunch () {
-    const that = this
     // wx.$api = api
     wx.$login = loginState
     // wx.$uploader = uploader
@@ -52,9 +51,9 @@ App({
       console.log('[app.js: onLaunch()]:未登录')
       this.globalData.isLogin = false
     }
-    
   },
-  openLocationUpdate(){
+  openLocationUpdate () {
+    const that = this
     // 监听地理位置数据，等待上报
     wx.startLocationUpdate({
       success (res) {
@@ -67,7 +66,7 @@ App({
         }
         wx.onLocationChange(locationChange)
       },
-      fail(res) {
+      fail (res) {
         console.log('开启后台定位失败', res)
       }
     })
